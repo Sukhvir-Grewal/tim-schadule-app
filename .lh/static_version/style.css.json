@@ -1,0 +1,754 @@
+{
+    "sourceFile": "static_version/style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 184,
+            "patches": [
+                {
+                    "date": 1722872598242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1722872638499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n-body{\n-    display: grid; place-content: center\n+*{\n+    padding: 0;\n+    margin: 0;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722872652173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n *{\n     padding: 0;\n     margin: 0;\n+}\n+\n+.main-container{\n+    background-color: red;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722872657727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n }\n \n .main-container{\n     background-color: red;\n+    height: 100;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722872783242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,8 @@\n }\n \n .main-container{\n     background-color: red;\n-    height: 100;\n+    height: 100vh;\n+    display: grid;\n+    pl\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722872789577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,6 @@\n .main-container{\n     background-color: red;\n     height: 100vh;\n     display: grid;\n-    pl\n-}\n\\ No newline at end of file\n+    place-content: center;\n+}\n"
+                },
+                {
+                    "date": 1722872796281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,4 +8,7 @@\n     height: 100vh;\n     display: grid;\n     place-content: center;\n }\n+.circle-1{\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722872802764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n     display: grid;\n     place-content: center;\n }\n .circle-1{\n-    \n+    height: 100px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722872814773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,7 @@\n     place-content: center;\n }\n .circle-1{\n     height: 100px;\n+    width: 100px;\n+    background-color: white;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722872823146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,13 @@\n     margin: 0;\n }\n \n .main-container{\n-    background-color: red;\n     height: 100vh;\n     display: grid;\n     place-content: center;\n }\n .circle-1{\n     height: 100px;\n     width: 100px;\n-    background-color: white;\n+    background-color: red;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722872831904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     margin: 0;\n }\n \n .main-container{\n-    height: 100vh;\n+    height: 100dvh;\n     display: grid;\n     place-content: center;\n }\n .circle-1{\n"
+                },
+                {
+                    "date": 1722872839674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,6 @@\n .circle-1{\n     height: 100px;\n     width: 100px;\n     background-color: red;\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722888998837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,6 +11,6 @@\n .circle-1{\n     height: 100px;\n     width: 100px;\n     background-color: red;\n-    \n+    border-radius: ;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889355209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     display: grid;\n     place-content: center;\n }\n .circle-1{\n-    height: 100px;\n+    height: 00px;\n     width: 100px;\n     background-color: red;\n-    border-radius: ;\n+    border-radius: 50%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889363335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     display: grid;\n     place-content: center;\n }\n .circle-1{\n-    height: 00px;\n-    width: 100px;\n+    height: 500px;\n+    width: 5000px;\n     background-color: red;\n     border-radius: 50%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889370281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     display: grid;\n     place-content: center;\n }\n .circle-1{\n-    height: 500px;\n+    height: 1000px;\n     width: 5000px;\n     background-color: red;\n     border-radius: 50%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889383336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     display: grid;\n     place-content: center;\n }\n .circle-1{\n-    height: 1000px;\n-    width: 5000px;\n+    height: 2000px;\n+    width: 1000px;\n     background-color: red;\n     border-radius: 50%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889423194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,12 @@\n .main-container{\n     height: 100dvh;\n     display: grid;\n     place-content: center;\n+    background-color: red;\n }\n .circle-1{\n     height: 2000px;\n-    width: 1000px;\n+    width: 2000px;\n     background-color: red;\n     border-radius: 50%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889428703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n .main-container{\n     height: 100dvh;\n     display: grid;\n     place-content: center;\n-    background-color: red;\n+    background-color: rgb(252, 150, 150);\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n"
+                },
+                {
+                    "date": 1722889434800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n }\n \n .main-container{\n     height: 100dvh;\n+    width: ;\n     display: grid;\n     place-content: center;\n     background-color: rgb(252, 150, 150);\n }\n"
+                },
+                {
+                    "date": 1722889440591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n }\n \n .main-container{\n     height: 100dvh;\n-    width: ;\n+    width: 100wh;\n     display: grid;\n     place-content: center;\n     background-color: rgb(252, 150, 150);\n }\n"
+                },
+                {
+                    "date": 1722889447009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n }\n \n .main-container{\n     height: 100dvh;\n-    width: 100wh;\n+    width: 100vw;\n     display: grid;\n     place-content: center;\n     background-color: rgb(252, 150, 150);\n }\n"
+                },
+                {
+                    "date": 1722889453284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n }\n \n .main-container{\n     height: 100dvh;\n-    width: 100vw;\n+    width: 100dvw;\n     display: grid;\n     place-content: center;\n     background-color: rgb(252, 150, 150);\n }\n"
+                },
+                {
+                    "date": 1722889473754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,11 @@\n     height: 2000px;\n     width: 2000px;\n     background-color: red;\n     border-radius: 50%;\n+}\n+.circle-1{\n+    height: 2000px;\n+    width: 2000px;\n+    background-color: red;\n+    border-radius: 50%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889484117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,12 +12,12 @@\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n-    background-color: red;\n+    background-color: rgb(245, 126, 126);\n     border-radius: 50%;\n }\n-.circle-1{\n+.circle-2{\n     height: 2000px;\n     width: 2000px;\n     background-color: red;\n     border-radius: 50%;\n"
+                },
+                {
+                    "date": 1722889495579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,13 +12,13 @@\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n-    background-color: rgb(245, 126, 126);\n+    background-color: red;\n     border-radius: 50%;\n }\n .circle-2{\n     height: 2000px;\n-    width: 2000px;\n+    width: 1000px;\n     background-color: red;\n     border-radius: 50%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889504701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,13 +12,13 @@\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n-    background-color: red;\n+    background-color: rgb(231, 110, 110);\n     border-radius: 50%;\n }\n .circle-2{\n-    height: 2000px;\n+    height: 1000px;\n     width: 1000px;\n     background-color: red;\n     border-radius: 50%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889511768,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n     height: 2000px;\n     width: 2000px;\n     background-color: rgb(231, 110, 110);\n     border-radius: 50%;\n+    display: grid;\n+    \n }\n .circle-2{\n     height: 1000px;\n     width: 1000px;\n"
+                },
+                {
+                    "date": 1722889521355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,12 +15,12 @@\n     width: 2000px;\n     background-color: rgb(231, 110, 110);\n     border-radius: 50%;\n     display: grid;\n-    \n+    place-content: center;\n }\n .circle-2{\n-    height: 1000px;\n+    height: 000px;\n     width: 1000px;\n     background-color: red;\n     border-radius: 50%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889527197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     display: grid;\n     place-content: center;\n }\n .circle-2{\n-    height: 000px;\n-    width: 1000px;\n+    height: 1500px;\n+    width: 1500px;\n     background-color: red;\n     border-radius: 50%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889541878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,5 +22,7 @@\n     height: 1500px;\n     width: 1500px;\n     background-color: red;\n     border-radius: 50%;\n+    display: grid;\n+    place-content: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889549253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n }\n .circle-2{\n     height: 1500px;\n     width: 1500px;\n-    background-color: red;\n+    background-color: rgb(233, 60, 60);\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889556657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,17 @@\n }\n .circle-2{\n     height: 1500px;\n     width: 1500px;\n-    background-color: rgb(233, 60, 60);\n+    background-color: rgb(230, 67, 67);\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n+}\n+.circle-2{\n+    height: 1500px;\n+    width: 1500px;\n+    background-color: rgb(230, 67, 67);\n+    border-radius: 50%;\n+    display: grid;\n+    place-content: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889562200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n-.circle-2{\n+.circle-3{\n     height: 1500px;\n     width: 1500px;\n     background-color: rgb(230, 67, 67);\n     border-radius: 50%;\n"
+                },
+                {
+                    "date": 1722889579892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     display: grid;\n     place-content: center;\n }\n .circle-3{\n-    height: 1500px;\n+    height: 1000px;\n     width: 1500px;\n     background-color: rgb(230, 67, 67);\n     border-radius: 50%;\n     display: grid;\n"
+                },
+                {
+                    "date": 1722889588353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,10 @@\n     place-content: center;\n }\n .circle-3{\n     height: 1000px;\n-    width: 1500px;\n-    background-color: rgb(230, 67, 67);\n+    width: 1000px;\n+    background-color: rgb(218, 49, 49);\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889598838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n }\n .circle-3{\n     height: 1000px;\n     width: 1000px;\n-    background-color: rgb(218, 49, 49);\n+    background-color: rgb(230, 15, 15);\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889611268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n }\n .circle-3{\n     height: 1000px;\n     width: 1000px;\n-    background-color: rgb(230, 15, 15);\n+    background-color: rgb(218, 49, 49);\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889617036,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n }\n .circle-3{\n     height: 1000px;\n     width: 1000px;\n-    background-color: rgb(218, 49, 49);\n+    background-color: rgb(236, 38, 38);\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889635452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n }\n .circle-3{\n     height: 1000px;\n     width: 1000px;\n-    background-color: rgb(236, 38, 38);\n+    background-color: rgb(238, 22, 22);\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722889765556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,11 @@\n     display: grid;\n     place-content: center;\n     background-color: rgb(252, 150, 150);\n }\n+.logo{\n+    \n+}\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n     background-color: rgb(231, 110, 110);\n"
+                },
+                {
+                    "date": 1722889778061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     place-content: center;\n     background-color: rgb(252, 150, 150);\n }\n .logo{\n-    \n+    position: absolute;\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n"
+                },
+                {
+                    "date": 1722889783818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n     background-color: rgb(252, 150, 150);\n }\n .logo{\n     position: absolute;\n+    left: 0;\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n"
+                },
+                {
+                    "date": 1722889886203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n *{\n     padding: 0;\n     margin: 0;\n+    \n }\n \n .main-container{\n     height: 100dvh;\n"
+                },
+                {
+                    "date": 1722889892462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n *{\n     padding: 0;\n     margin: 0;\n-    \n }\n \n+body\n+\n .main-container{\n     height: 100dvh;\n     width: 100dvw;\n     display: grid;\n"
+                },
+                {
+                    "date": 1722889903875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,11 @@\n     padding: 0;\n     margin: 0;\n }\n \n-body\n+body{\n+    l\n+}\n \n .main-container{\n     height: 100dvh;\n     width: 100dvw;\n"
+                },
+                {
+                    "date": 1722889918479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     margin: 0;\n }\n \n body{\n-    l\n+    sc\n }\n \n .main-container{\n     height: 100dvh;\n"
+                },
+                {
+                    "date": 1722889924148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     margin: 0;\n }\n \n body{\n-    sc\n+    overflow-x: ;\n }\n \n .main-container{\n     height: 100dvh;\n"
+                },
+                {
+                    "date": 1722889934982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     margin: 0;\n }\n \n body{\n-    overflow-x: ;\n+    overflow-x:;\n }\n \n .main-container{\n     height: 100dvh;\n"
+                },
+                {
+                    "date": 1722889946228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     margin: 0;\n }\n \n body{\n-    overflow-x:;\n+    overflow-x:hidden;\n }\n \n .main-container{\n     height: 100dvh;\n"
+                },
+                {
+                    "date": 1722889963563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     margin: 0;\n }\n \n body{\n-    overflow-x:hidden;\n+    \n }\n \n .main-container{\n     height: 100dvh;\n"
+                },
+                {
+                    "date": 1722889971743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,18 +2,16 @@\n     padding: 0;\n     margin: 0;\n }\n \n-body{\n-    \n-}\n-\n .main-container{\n     height: 100dvh;\n     width: 100dvw;\n     display: grid;\n     place-content: center;\n     background-color: rgb(252, 150, 150);\n+    overflow-x:hidden;\n+    overflow-y:hidden;\n }\n .logo{\n     position: absolute;\n     left: 0;\n"
+                },
+                {
+                    "date": 1722889991124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n     width: 100dvw;\n     display: grid;\n     place-content: center;\n     background-color: rgb(252, 150, 150);\n-    overflow-x:hidden;\n-    overflow-y:hidden;\n+    \n }\n .logo{\n     position: absolute;\n     left: 0;\n"
+                },
+                {
+                    "date": 1722890006479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n }\n .logo{\n     position: absolute;\n     left: 0;\n+    right: 0;\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n"
+                },
+                {
+                    "date": 1722890012408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n+    \n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n"
+                },
+                {
+                    "date": 1722890017929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n-    \n+    size: 100px;\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n"
+                },
+                {
+                    "date": 1722890024231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n-    size: 100px;\n+    height: ;\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n"
+                },
+                {
+                    "date": 1722890031613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n-    height: ;\n+    height: 400px;\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n"
+                },
+                {
+                    "date": 1722890051998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,15 +8,15 @@\n     width: 100dvw;\n     display: grid;\n     place-content: center;\n     background-color: rgb(252, 150, 150);\n-    \n+    position: relative;\n }\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n-    height: 400px;\n+    height: 450px;\n }\n .circle-1{\n     height: 2000px;\n     width: 2000px;\n"
+                },
+                {
+                    "date": 1722890066521,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n *{\n     padding: 0;\n     margin: 0;\n+    over\n }\n \n .main-container{\n     height: 100dvh;\n"
+                },
+                {
+                    "date": 1722890085497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n *{\n     padding: 0;\n     margin: 0;\n-    over\n+    overflow-x: hidden;\n }\n \n .main-container{\n     height: 100dvh;\n@@ -15,8 +15,9 @@\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n+    top: 10px;\n     height: 450px;\n }\n .circle-1{\n     height: 2000px;\n"
+                },
+                {
+                    "date": 1722890090584,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n-    top: 10px;\n+    top: 5px;\n     height: 450px;\n }\n .circle-1{\n     height: 2000px;\n"
+                },
+                {
+                    "date": 1722890098145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n-    top: 5px;\n+    top: px;\n     height: 450px;\n }\n .circle-1{\n     height: 2000px;\n"
+                },
+                {
+                    "date": 1722890105240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n-    top: px;\n+    top: 0;\n     height: 450px;\n }\n .circle-1{\n     height: 2000px;\n"
+                },
+                {
+                    "date": 1722890114926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n-    top: 0;\n     height: 450px;\n }\n .circle-1{\n     height: 2000px;\n"
+                },
+                {
+                    "date": 1722890198256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n *{\n     padding: 0;\n     margin: 0;\n     overflow-x: hidden;\n+    overflow-x: hidden;\n }\n \n .main-container{\n     height: 100dvh;\n@@ -15,8 +16,9 @@\n .logo{\n     position: absolute;\n     left: 0;\n     right: 0;\n+    top: 0;\n     height: 450px;\n }\n .circle-1{\n     height: 2000px;\n"
+                },
+                {
+                    "date": 1722890216109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n *{\n     padding: 0;\n     margin: 0;\n     overflow-x: hidden;\n-    overflow-x: hidden;\n+    overflow-y: hidden;\n }\n \n .main-container{\n     height: 100dvh;\n@@ -42,5 +42,6 @@\n     background-color: rgb(238, 22, 22);\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n-}\n\\ No newline at end of file\n+}\n+\n"
+                },
+                {
+                    "date": 1722890224610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,4 +44,5 @@\n     display: grid;\n     place-content: center;\n }\n \n+k\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722890302225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,5 +44,4 @@\n     display: grid;\n     place-content: center;\n }\n \n-k\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722890308885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,4 +44,7 @@\n     display: grid;\n     place-content: center;\n }\n \n+@keyframes expand {\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722890315850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,6 +45,6 @@\n     place-content: center;\n }\n \n @keyframes expand {\n-    \n+    0%\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722890430377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,7 +44,14 @@\n     display: grid;\n     place-content: center;\n }\n \n-@keyframes expand {\n-    0%\n-}\n\\ No newline at end of file\n+@keyframes expandCircle {\n+    0% {\n+      width: 0px;\n+      height: 0px;\n+    }\n+    100% {\n+      width: 100px;\n+      height: 100px;\n+    }\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722890436975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,8 @@\n       width: 0px;\n       height: 0px;\n     }\n     100% {\n-      width: 100px;\n-      height: 100px;\n+      width: 100%;\n+      height: 100%;\n     }\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722890447716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n     background-color: rgb(231, 110, 110);\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n+    animation: expandCircle 0.5s ease forwards;\n }\n .circle-2{\n     height: 1500px;\n     width: 1500px;\n"
+                },
+                {
+                    "date": 1722890471678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,15 +44,4 @@\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n-\n-@keyframes expandCircle {\n-    0% {\n-      width: 0px;\n-      height: 0px;\n-    }\n-    100% {\n-      width: 100%;\n-      height: 100%;\n-    }\n-  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722890589547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,47 +1,81 @@\n-*{\n+* {\n     padding: 0;\n     margin: 0;\n     overflow-x: hidden;\n     overflow-y: hidden;\n-}\n-\n-.main-container{\n+  }\n+  \n+  .main-container {\n     height: 100dvh;\n     width: 100dvw;\n     display: grid;\n     place-content: center;\n     background-color: rgb(252, 150, 150);\n     position: relative;\n-}\n-.logo{\n+  }\n+  \n+  .logo {\n     position: absolute;\n     left: 0;\n     right: 0;\n     top: 0;\n     height: 450px;\n-}\n-.circle-1{\n-    height: 2000px;\n-    width: 2000px;\n-    background-color: rgb(231, 110, 110);\n+  }\n+  \n+  .circle-1, .circle-2, .circle-3 {\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n-    animation: expandCircle 0.5s ease forwards;\n-}\n-.circle-2{\n-    height: 1500px;\n-    width: 1500px;\n+  }\n+  \n+  .circle-1 {\n+    background-color: rgb(231, 110, 110);\n+    animation: expandCircle1 1s ease forwards;\n+    animation-delay: 0s;\n+  }\n+  \n+  .circle-2 {\n     background-color: rgb(230, 67, 67);\n-    border-radius: 50%;\n-    display: grid;\n-    place-content: center;\n-}\n-.circle-3{\n-    height: 1000px;\n-    width: 1000px;\n+    animation: expandCircle2 1s ease forwards;\n+    animation-delay: 1s;\n+  }\n+  \n+  .circle-3 {\n     background-color: rgb(238, 22, 22);\n-    border-radius: 50%;\n-    display: grid;\n-    place-content: center;\n-}\n+    animation: expandCircle3 1s ease forwards;\n+    animation-delay: 2s;\n+  }\n+  \n+  @keyframes expandCircle1 {\n+    0% {\n+      width: 0;\n+      height: 0;\n+    }\n+    100% {\n+      width: 2000px;\n+      height: 2000px;\n+    }\n+  }\n+  \n+  @keyframes expandCircle2 {\n+    0% {\n+      width: 0;\n+      height: 0;\n+    }\n+    100% {\n+      width: 1500px;\n+      height: 1500px;\n+    }\n+  }\n+  \n+  @keyframes expandCircle3 {\n+    0% {\n+      width: 0;\n+      height: 0;\n+    }\n+    100% {\n+      width: 1000px;\n+      height: 1000px;\n+    }\n+  }\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722890602508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n       height: 2000px;\n     }\n   }\n   \n-  @keyframes expandCircle2 {\n+  @keyframes expandCircle2 { \n     0% {\n       width: 0;\n       height: 0;\n     }\n"
+                },
+                {
+                    "date": 1722890623664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     height: 100dvh;\n     width: 100dvw;\n     display: grid;\n     place-content: center;\n-    background-color: rgb(252, 150, 150);\n+    /* background-color: rgb(252, 150, 150); */\n     position: relative;\n   }\n   \n   .logo {\n"
+                },
+                {
+                    "date": 1722890645037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     height: 100dvh;\n     width: 100dvw;\n     display: grid;\n     place-content: center;\n-    /* background-color: rgb(252, 150, 150); */\n+    /* background-color: rgb(252, 1 50, 150); */\n     position: relative;\n   }\n   \n   .logo {\n"
+                },
+                {
+                    "date": 1722890699443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,13 +5,13 @@\n     overflow-y: hidden;\n   }\n   \n   .main-container {\n-    height: 100dvh;\n-    width: 100dvw;\n+    height: 100vh;\n+    width: 100vw;\n     display: grid;\n     place-content: center;\n-    /* background-color: rgb(252, 1 50, 150); */\n+    background-color: rgb(252, 150, 150);\n     position: relative;\n   }\n   \n   .logo {\n@@ -25,57 +25,58 @@\n   .circle-1, .circle-2, .circle-3 {\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n+    position: absolute;\n   }\n   \n   .circle-1 {\n     background-color: rgb(231, 110, 110);\n+    width: 2000px;\n+    height: 2000px;\n     animation: expandCircle1 1s ease forwards;\n-    animation-delay: 0s;\n+    animation-delay: 2s;\n   }\n   \n   .circle-2 {\n     background-color: rgb(230, 67, 67);\n+    width: 1500px;\n+    height: 1500px;\n     animation: expandCircle2 1s ease forwards;\n     animation-delay: 1s;\n   }\n   \n   .circle-3 {\n     background-color: rgb(238, 22, 22);\n+    width: 1000px;\n+    height: 1000px;\n     animation: expandCircle3 1s ease forwards;\n-    animation-delay: 2s;\n+    animation-delay: 0s;\n   }\n   \n   @keyframes expandCircle1 {\n     0% {\n-      width: 0;\n-      height: 0;\n+      transform: scale(0);\n     }\n     100% {\n-      width: 2000px;\n-      height: 2000px;\n+      transform: scale(1);\n     }\n   }\n   \n-  @keyframes expandCircle2 { \n+  @keyframes expandCircle2 {\n     0% {\n-      width: 0;\n-      height: 0;\n+      transform: scale(0);\n     }\n     100% {\n-      width: 1500px;\n-      height: 1500px;\n+      transform: scale(1);\n     }\n   }\n   \n   @keyframes expandCircle3 {\n     0% {\n-      width: 0;\n-      height: 0;\n+      transform: scale(0);\n     }\n     100% {\n-      width: 1000px;\n-      height: 1000px;\n+      transform: scale(1);\n     }\n   }\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722890707890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,82 +1,81 @@\n * {\n-    padding: 0;\n-    margin: 0;\n-    overflow-x: hidden;\n-    overflow-y: hidden;\n+  padding: 0;\n+  margin: 0;\n+  overflow-x: hidden;\n+  overflow-y: hidden;\n+}\n+\n+.main-container {\n+  height: 100vh;\n+  width: 100vw;\n+  display: grid;\n+  place-content: center;\n+  background-color: rgb(252, 150, 150);\n+  position: relative;\n+}\n+\n+.logo {\n+  position: absolute;\n+  left: 0;\n+  right: 0;\n+  top: 0;\n+  height: 450px;\n+}\n+\n+.circle-1, .circle-2, .circle-3 {\n+  border-radius: 50%;\n+  display: grid;\n+  place-content: center;\n+  position: absolute;\n+}\n+\n+.circle-1 {\n+  background-color: rgb(231, 110, 110);\n+  width: 2000px;\n+  height: 2000px;\n+  animation: expandCircle1 1s ease forwards;\n+  animation-delay: 2s;\n+}\n+\n+.circle-2 {\n+  background-color: rgb(230, 67, 67);\n+  width: 1500px;\n+  height: 1500px;\n+  animation: expandCircle2 1s ease forwards;\n+  animation-delay: 1s;\n+}\n+\n+.circle-3 {\n+  background-color: rgb(238, 22, 22);\n+  width: 1000px;\n+  height: 1000px;\n+  animation: expandCircle3 1s ease forwards;\n+  animation-delay: 0s;\n+}\n+\n+@keyframes expandCircle1 {\n+  0% {\n+    transform: scale(0);\n   }\n-  \n-  .main-container {\n-    height: 100vh;\n-    width: 100vw;\n-    display: grid;\n-    place-content: center;\n-    background-color: rgb(252, 150, 150);\n-    position: relative;\n+  100% {\n+    transform: scale(1);\n   }\n-  \n-  .logo {\n-    position: absolute;\n-    left: 0;\n-    right: 0;\n-    top: 0;\n-    height: 450px;\n+}\n\\ No newline at end of file\n+\n+@keyframes expandCircle2 {\n+  0% {\n+    transform: scale(0);\n   }\n-  \n-  .circle-1, .circle-2, .circle-3 {\n-    border-radius: 50%;\n-    display: grid;\n-    place-content: center;\n-    position: absolute;\n+  100% {\n+    transform: scale(1);\n   }\n-  \n-  .circle-1 {\n-    background-color: rgb(231, 110, 110);\n-    width: 2000px;\n-    height: 2000px;\n-    animation: expandCircle1 1s ease forwards;\n-    animation-delay: 2s;\n+}\n+\n+@keyframes expandCircle3 {\n+  0% {\n+    transform: scale(0);\n   }\n-  \n-  .circle-2 {\n-    background-color: rgb(230, 67, 67);\n-    width: 1500px;\n-    height: 1500px;\n-    animation: expandCircle2 1s ease forwards;\n-    animation-delay: 1s;\n+  100% {\n+    transform: scale(1);\n   }\n-  \n-  .circle-3 {\n-    background-color: rgb(238, 22, 22);\n-    width: 1000px;\n-    height: 1000px;\n-    animation: expandCircle3 1s ease forwards;\n-    animation-delay: 0s;\n-  }\n-  \n-  @keyframes expandCircle1 {\n-    0% {\n-      transform: scale(0);\n-    }\n-    100% {\n-      transform: scale(1);\n-    }\n-  }\n-  \n-  @keyframes expandCircle2 {\n-    0% {\n-      transform: scale(0);\n-    }\n-    100% {\n-      transform: scale(1);\n-    }\n-  }\n-  \n-  @keyframes expandCircle3 {\n-    0% {\n-      transform: scale(0);\n-    }\n-    100% {\n-      transform: scale(1);\n-    }\n-  }\n-  \n+}\n"
+                },
+                {
+                    "date": 1722890766528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,81 +1,81 @@\n * {\n-  padding: 0;\n-  margin: 0;\n-  overflow-x: hidden;\n-  overflow-y: hidden;\n-}\n-\n-.main-container {\n-  height: 100vh;\n-  width: 100vw;\n-  display: grid;\n-  place-content: center;\n-  background-color: rgb(252, 150, 150);\n-  position: relative;\n-}\n-\n-.logo {\n-  position: absolute;\n-  left: 0;\n-  right: 0;\n-  top: 0;\n-  height: 450px;\n-}\n-\n-.circle-1, .circle-2, .circle-3 {\n-  border-radius: 50%;\n-  display: grid;\n-  place-content: center;\n-  position: absolute;\n-}\n-\n-.circle-1 {\n-  background-color: rgb(231, 110, 110);\n-  width: 2000px;\n-  height: 2000px;\n-  animation: expandCircle1 1s ease forwards;\n-  animation-delay: 2s;\n-}\n-\n-.circle-2 {\n-  background-color: rgb(230, 67, 67);\n-  width: 1500px;\n-  height: 1500px;\n-  animation: expandCircle2 1s ease forwards;\n-  animation-delay: 1s;\n-}\n-\n-.circle-3 {\n-  background-color: rgb(238, 22, 22);\n-  width: 1000px;\n-  height: 1000px;\n-  animation: expandCircle3 1s ease forwards;\n-  animation-delay: 0s;\n-}\n-\n-@keyframes expandCircle1 {\n-  0% {\n-    transform: scale(0);\n+    padding: 0;\n+    margin: 0;\n+    overflow-x: hidden;\n+    overflow-y: hidden;\n   }\n-  100% {\n-    transform: scale(1);\n+  \n+  .main-container {\n+    height: 100dvh;\n+    width: 100dvw;\n+    display: grid;\n+    place-content: center;\n+    /* background-color: rgb(252, 150, 150); */\n+    position: relative;\n   }\n-}\n-\n-@keyframes expandCircle2 {\n-  0% {\n-    transform: scale(0);\n+  \n+  .logo {\n\\ No newline at end of file\n+    position: absolute;\n+    left: 0;\n+    right: 0;\n+    top: 0;\n+    height: 450px;\n   }\n-  100% {\n-    transform: scale(1);\n+  \n+  .circle-1, .circle-2, .circle-3 {\n+    border-radius: 50%;\n+    display: grid;\n+    place-content: center;\n   }\n-}\n-\n-@keyframes expandCircle3 {\n-  0% {\n-    transform: scale(0);\n+  \n+  .circle-1 {\n+    background-color: rgb(231, 110, 110);\n+    animation: expandCircle1 1s ease backwards;\n+    animation-delay: 0s;\n   }\n-  100% {\n-    transform: scale(1);\n+  \n+  .circle-2 {\n+    background-color: rgb(230, 67, 67);\n+    animation: expandCircle2 1s ease backwards;\n+    animation-delay: 1s;\n   }\n-}\n+  \n+  .circle-3 {\n+    background-color: rgb(238, 22, 22);\n+    animation: expandCircle3 1s ease backwards;\n+    animation-delay: 2s;\n+  }\n+  \n+  @keyframes expandCircle1 {\n+    0% {\n+      width: 0;\n+      height: 0;\n+    }\n+    100% {\n+      width: 2000px;\n+      height: 2000px;\n+    }\n+  }\n+  \n+  @keyframes expandCircle2 { \n+    0% {\n+      width: 0;\n+      height: 0;\n+    }\n+    100% {\n+      width: 1500px;\n+      height: 1500px;\n+    }\n+  }\n+  \n+  @keyframes expandCircle3 {\n+    0% {\n+      width: 0;\n+      height: 0;\n+    }\n+    100% {\n+      width: 1000px;\n+      height: 1000px;\n+    }\n+  }\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722890773483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,21 +29,21 @@\n   }\n   \n   .circle-1 {\n     background-color: rgb(231, 110, 110);\n-    animation: expandCircle1 1s ease backwards;\n+    animation: expandCircle1 1s ease forwards;\n     animation-delay: 0s;\n   }\n   \n   .circle-2 {\n     background-color: rgb(230, 67, 67);\n-    animation: expandCircle2 1s ease backwards;\n+    animation: expandCircle2 1s ease forwards;\n     animation-delay: 1s;\n   }\n   \n   .circle-3 {\n     background-color: rgb(238, 22, 22);\n-    animation: expandCircle3 1s ease backwards;\n+    animation: expandCircle3 1s ease forwards;\n     animation-delay: 2s;\n   }\n   \n   @keyframes expandCircle1 {\n"
+                },
+                {
+                    "date": 1722890781357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,15 +35,15 @@\n   }\n   \n   .circle-2 {\n     background-color: rgb(230, 67, 67);\n-    animation: expandCircle2 1s ease forwards;\n+    animation: expandCircle2 1s ease ;\n     animation-delay: 1s;\n   }\n   \n   .circle-3 {\n     background-color: rgb(238, 22, 22);\n-    animation: expandCircle3 1s ease forwards;\n+    animation: expandCircle3 1s ease ;\n     animation-delay: 2s;\n   }\n   \n   @keyframes expandCircle1 {\n"
+                },
+                {
+                    "date": 1722890790224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     height: 100dvh;\n     width: 100dvw;\n     display: grid;\n     place-content: center;\n-    /* background-color: rgb(252, 150, 150); */\n+    /* background-color: rgb(252, 1 50, 150); */\n     position: relative;\n   }\n   \n   .logo {\n@@ -35,15 +35,15 @@\n   }\n   \n   .circle-2 {\n     background-color: rgb(230, 67, 67);\n-    animation: expandCircle2 1s ease ;\n+    animation: expandCircle2 1s ease forwards;\n     animation-delay: 1s;\n   }\n   \n   .circle-3 {\n     background-color: rgb(238, 22, 22);\n-    animation: expandCircle3 1s ease ;\n+    animation: expandCircle3 1s ease forwards;\n     animation-delay: 2s;\n   }\n   \n   @keyframes expandCircle1 {\n"
+                },
+                {
+                    "date": 1722890811293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n     height: 100dvh;\n     width: 100dvw;\n     display: grid;\n     place-content: center;\n-    /* background-color: rgb(252, 1 50, 150); */\n+    /* background-color: rgb(252, 150, 150); */\n     position: relative;\n   }\n   \n   .logo {\n@@ -31,8 +31,9 @@\n   .circle-1 {\n     background-color: rgb(231, 110, 110);\n     animation: expandCircle1 1s ease forwards;\n     animation-delay: 0s;\n+    animation-delay: 2s;\n   }\n   \n   .circle-2 {\n     background-color: rgb(230, 67, 67);\n@@ -42,9 +43,8 @@\n   \n   .circle-3 {\n     background-color: rgb(238, 22, 22);\n     animation: expandCircle3 1s ease forwards;\n-    animation-delay: 2s;\n   }\n   \n   @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722890822115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,21 +30,21 @@\n   \n   .circle-1 {\n     background-color: rgb(231, 110, 110);\n     animation: expandCircle1 1s ease forwards;\n-    animation-delay: 0s;\n     animation-delay: 2s;\n-  }\n-  \n-  .circle-2 {\n+}\n+\n+.circle-2 {\n     background-color: rgb(230, 67, 67);\n     animation: expandCircle2 1s ease forwards;\n     animation-delay: 1s;\n-  }\n+}\n   \n   .circle-3 {\n-    background-color: rgb(238, 22, 22);\n-    animation: expandCircle3 1s ease forwards;\n+      background-color: rgb(238, 22, 22);\n+      animation: expandCircle3 1s ease forwards;\n+      animation-delay: 0s; \n   }\n   \n   @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722890848103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,21 +30,21 @@\n   \n   .circle-1 {\n     background-color: rgb(231, 110, 110);\n     animation: expandCircle1 1s ease forwards;\n-    animation-delay: 2s;\n-}\n-\n-.circle-2 {\n+    animation-delay: 0s;\n+  }\n+  \n+  .circle-2 {\n     background-color: rgb(230, 67, 67);\n     animation: expandCircle2 1s ease forwards;\n     animation-delay: 1s;\n-}\n+  }\n   \n   .circle-3 {\n-      background-color: rgb(238, 22, 22);\n-      animation: expandCircle3 1s ease forwards;\n-      animation-delay: 0s; \n+    background-color: rgb(238, 22, 22);\n+    animation: expandCircle3 1s ease forwards;\n+    animation-delay: 2s;\n   }\n   \n   @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722890858778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n   \n   .circle-2 {\n     background-color: rgb(230, 67, 67);\n     animation: expandCircle2 1s ease forwards;\n-    animation-delay: 1s;\n+    animation-delay: 0.5s;\n   }\n   \n   .circle-3 {\n     background-color: rgb(238, 22, 22);\n"
+                },
+                {
+                    "date": 1722890890368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     place-content: center;\n   }\n   \n   .circle-1 {\n-    background-color: rgb(231, 110, 110);\n+    background-color: rgb(228, 129, 129);\n     animation: expandCircle1 1s ease forwards;\n     animation-delay: 0s;\n   }\n   \n@@ -42,9 +42,9 @@\n   \n   .circle-3 {\n     background-color: rgb(238, 22, 22);\n     animation: expandCircle3 1s ease forwards;\n-    animation-delay: 2s;\n+    animation-delay: 1s;\n   }\n   \n   @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722890899465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     animation-delay: 0s;\n   }\n   \n   .circle-2 {\n-    background-color: rgb(230, 67, 67);\n+    background-color: rgb(233, 94, 94);\n     animation: expandCircle2 1s ease forwards;\n     animation-delay: 0.5s;\n   }\n   \n"
+                },
+                {
+                    "date": 1722890907697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     animation-delay: 0.5s;\n   }\n   \n   .circle-3 {\n-    background-color: rgb(238, 22, 22);\n+    background-color: rgb(236, 59, 59);\n     animation: expandCircle3 1s ease forwards;\n     animation-delay: 1s;\n   }\n   \n"
+                },
+                {
+                    "date": 1722890916091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n     animation-delay: 0.5s;\n   }\n   \n   .circle-3 {\n-    background-color: rgb(236, 59, 59);\n+    background-color: rgb(236, 72, 72);\n     animation: expandCircle3 1s ease forwards;\n     animation-delay: 1s;\n   }\n   \n"
+                },
+                {
+                    "date": 1722890949619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,13 @@\n     background-color: rgb(236, 72, 72);\n     animation: expandCircle3 1s ease forwards;\n     animation-delay: 1s;\n   }\n+  .circle-3 {\n+    background-color: rgb(236, 72, 72);\n+    animation: expandCircle3 1s ease forwards;\n+    animation-delay: 1s;\n+  }\n   \n   @keyframes expandCircle1 {\n     0% {\n       width: 0;\n"
+                },
+                {
+                    "date": 1722890957012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,12 +44,12 @@\n     background-color: rgb(236, 72, 72);\n     animation: expandCircle3 1s ease forwards;\n     animation-delay: 1s;\n   }\n-  .circle-3 {\n+  .circle-4 {\n     background-color: rgb(236, 72, 72);\n     animation: expandCircle3 1s ease forwards;\n-    animation-delay: 1s;\n+    animation-delay: 1.5s;\n   }\n   \n   @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722890965233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n     animation-delay: 1s;\n   }\n   .circle-4 {\n     background-color: rgb(236, 72, 72);\n-    animation: expandCircle3 1s ease forwards;\n+    animation: expandCircle4 1s ease forwards;\n     animation-delay: 1.5s;\n   }\n   \n   @keyframes expandCircle1 {\n"
+                },
+                {
+                    "date": 1722890971203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,85 +2,86 @@\n     padding: 0;\n     margin: 0;\n     overflow-x: hidden;\n     overflow-y: hidden;\n-  }\n-  \n-  .main-container {\n+}\n+\n+.main-container {\n     height: 100dvh;\n     width: 100dvw;\n     display: grid;\n     place-content: center;\n     /* background-color: rgb(252, 150, 150); */\n     position: relative;\n-  }\n-  \n-  .logo {\n+}\n+\n+.logo {\n     position: absolute;\n     left: 0;\n     right: 0;\n     top: 0;\n     height: 450px;\n-  }\n-  \n-  .circle-1, .circle-2, .circle-3 {\n+}\n+\n+.circle-1,\n+.circle-2,\n+.circle-3 {\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n-  }\n-  \n-  .circle-1 {\n+}\n+\n+.circle-1 {\n     background-color: rgb(228, 129, 129);\n     animation: expandCircle1 1s ease forwards;\n     animation-delay: 0s;\n-  }\n-  \n-  .circle-2 {\n+}\n+\n+.circle-2 {\n     background-color: rgb(233, 94, 94);\n     animation: expandCircle2 1s ease forwards;\n     animation-delay: 0.5s;\n-  }\n-  \n-  .circle-3 {\n+}\n+\n+.circle-3 {\n     background-color: rgb(236, 72, 72);\n     animation: expandCircle3 1s ease forwards;\n     animation-delay: 1s;\n-  }\n-  .circle-4 {\n+}\n+.circle-4 {\n     background-color: rgb(236, 72, 72);\n     animation: expandCircle4 1s ease forwards;\n     animation-delay: 1.5s;\n-  }\n-  \n-  @keyframes expandCircle1 {\n+}\n+\n+@keyframes expandCircle1 {\n     0% {\n-      width: 0;\n-      height: 0;\n+        width: 0;\n+        height: 0;\n     }\n     100% {\n\\ No newline at end of file\n-      width: 2000px;\n-      height: 2000px;\n+        width: 2000px;\n+        height: 2000px;\n     }\n-  }\n-  \n-  @keyframes expandCircle2 { \n+}\n+\n+@keyframes expandCircle2 {\n     0% {\n-      width: 0;\n-      height: 0;\n+        width: 0;\n+        height: 0;\n     }\n     100% {\n-      width: 1500px;\n-      height: 1500px;\n+        width: 1500px;\n+        height: 1500px;\n     }\n-  }\n-  \n-  @keyframes expandCircle3 {\n+}\n+\n+@keyframes expandCircle3 {\n     0% {\n-      width: 0;\n-      height: 0;\n+        width: 0;\n+        height: 0;\n     }\n     100% {\n-      width: 1000px;\n-      height: 1000px;\n+        width: 1000px;\n+        height: 1000px;\n     }\n-  }\n-  \n+}\n"
+                },
+                {
+                    "date": 1722890977785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,5 +83,17 @@\n     100% {\n         width: 1000px;\n         height: 1000px;\n     }\n-}\n\\ No newline at end of file\n+}\n+\n+@keyframes expandCircle4 {\n+    0% {\n+        width: 0;\n+        height: 0;\n+    }\n+    100% {\n+        width: 1000px;\n+        height: 1000px;\n+    }\n+}\n+\n"
+                },
+                {
+                    "date": 1722890986319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -91,9 +91,9 @@\n         width: 0;\n         height: 0;\n     }\n     100% {\n-        width: 1000px;\n-        height: 1000px;\n+        width: 500px;\n+        height: 500px;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1722890993689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     animation: expandCircle3 1s ease forwards;\n     animation-delay: 1s;\n }\n .circle-4 {\n-    background-color: rgb(236, 72, 72);\n+    background-color: rgb(233, 65, 65);\n     animation: expandCircle4 1s ease forwards;\n     animation-delay: 1.5s;\n }\n \n"
+                },
+                {
+                    "date": 1722891005119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,10 @@\n }\n \n .circle-1,\n .circle-2,\n-.circle-3 {\n+.circle-3,\n+ {\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n@@ -47,9 +48,9 @@\n     animation: expandCircle3 1s ease forwards;\n     animation-delay: 1s;\n }\n .circle-4 {\n-    background-color: rgb(233, 65, 65);\n+    background-color: rgb(233, 58, 58);\n     animation: expandCircle4 1s ease forwards;\n     animation-delay: 1.5s;\n }\n \n"
+                },
+                {
+                    "date": 1722891010904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \n .circle-1,\n .circle-2,\n .circle-3,\n- {\n+circle {\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n"
+                },
+                {
+                    "date": 1722891016212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \n .circle-1,\n .circle-2,\n .circle-3,\n-circle {\n+.circle-4 {\n     border-radius: 50%;\n     display: grid;\n     place-content: center;\n }\n"
+                },
+                {
+                    "date": 1722891025843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n \n .circle-2 {\n     background-color: rgb(233, 94, 94);\n     animation: expandCircle2 1s ease forwards;\n-    animation-delay: 0.5s;\n+    animation-delay: 0.s;\n }\n \n .circle-3 {\n     background-color: rgb(236, 72, 72);\n"
+                },
+                {
+                    "date": 1722891030975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,15 +39,15 @@\n \n .circle-2 {\n     background-color: rgb(233, 94, 94);\n     animation: expandCircle2 1s ease forwards;\n-    animation-delay: 0.s;\n+    animation-delay: 0.3s;\n }\n \n .circle-3 {\n     background-color: rgb(236, 72, 72);\n     animation: expandCircle3 1s ease forwards;\n-    animation-delay: 1s;\n+    animation-delay: 0.s;\n }\n .circle-4 {\n     background-color: rgb(233, 58, 58);\n     animation: expandCircle4 1s ease forwards;\n"
+                },
+                {
+                    "date": 1722891146829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,14 +45,15 @@\n \n .circle-3 {\n     background-color: rgb(236, 72, 72);\n     animation: expandCircle3 1s ease forwards;\n-    animation-delay: 0.s;\n+    animation-delay: 0.8s;\n }\n .circle-4 {\n     background-color: rgb(233, 58, 58);\n     animation: expandCircle4 1s ease forwards;\n-    animation-delay: 1.5s;\n+    animation-delay: 1.2s;\n+    \n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722891152114,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n .circle-4 {\n     background-color: rgb(233, 58, 58);\n     animation: expandCircle4 1s ease forwards;\n     animation-delay: 1.2s;\n-    \n+    font-size: ;\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722891157361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n .circle-4 {\n     background-color: rgb(233, 58, 58);\n     animation: expandCircle4 1s ease forwards;\n     animation-delay: 1.2s;\n-    font-size: ;\n+    font-size: xx-large;\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722891175714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,26 +32,26 @@\n }\n \n .circle-1 {\n     background-color: rgb(228, 129, 129);\n-    animation: expandCircle1 1s ease forwards;\n+    /* animation: expandCircle1 1s ease forwards; */\n     animation-delay: 0s;\n }\n \n .circle-2 {\n     background-color: rgb(233, 94, 94);\n-    animation: expandCircle2 1s ease forwards;\n+    /* animation: expandCircle2 1s ease forwards; */\n     animation-delay: 0.3s;\n }\n \n .circle-3 {\n     background-color: rgb(236, 72, 72);\n-    animation: expandCircle3 1s ease forwards;\n+    /* animation: expandCircle3 1s ease forwards; */\n     animation-delay: 0.8s;\n }\n .circle-4 {\n     background-color: rgb(233, 58, 58);\n-    animation: expandCircle4 1s ease forwards;\n+    /* animation: expandCircle4 1s ease forwards; */\n     animation-delay: 1.2s;\n     font-size: xx-large;\n }\n \n"
+                },
+                {
+                    "date": 1722891213083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,68 +32,68 @@\n }\n \n .circle-1 {\n     background-color: rgb(228, 129, 129);\n-    /* animation: expandCircle1 1s ease forwards; */\n+    animation: expandCircle1 1s ease forwards;\n     animation-delay: 0s;\n }\n \n .circle-2 {\n     background-color: rgb(233, 94, 94);\n-    /* animation: expandCircle2 1s ease forwards; */\n+    animation: expandCircle2 1s ease forwards;\n     animation-delay: 0.3s;\n }\n \n .circle-3 {\n     background-color: rgb(236, 72, 72);\n-    /* animation: expandCircle3 1s ease forwards; */\n+    animation: expandCircle3 1s ease forwards;\n     animation-delay: 0.8s;\n }\n .circle-4 {\n     background-color: rgb(233, 58, 58);\n-    /* animation: expandCircle4 1s ease forwards; */\n+    animation: expandCircle4 1s ease forwards;\n     animation-delay: 1.2s;\n     font-size: xx-large;\n }\n \n @keyframes expandCircle1 {\n-    0% {\n+    /* 0% {\n         width: 0;\n         height: 0;\n-    }\n+    } */\n     100% {\n         width: 2000px;\n         height: 2000px;\n     }\n }\n \n @keyframes expandCircle2 {\n-    0% {\n+    /* 0% {\n         width: 0;\n         height: 0;\n-    }\n+    } */\n     100% {\n         width: 1500px;\n         height: 1500px;\n     }\n }\n \n @keyframes expandCircle3 {\n-    0% {\n+    /* 0% {\n         width: 0;\n         height: 0;\n-    }\n+    } */\n     100% {\n         width: 1000px;\n         height: 1000px;\n     }\n }\n \n @keyframes expandCircle4 {\n-    0% {\n+    /* 0% {\n         width: 0;\n         height: 0;\n-    }\n+    } */\n     100% {\n         width: 500px;\n         height: 500px;\n     }\n"
+                },
+                {
+                    "date": 1722891230973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n .circle-4 {\n     background-color: rgb(233, 58, 58);\n     animation: expandCircle4 1s ease forwards;\n     animation-delay: 1.2s;\n-    font-size: xx-large;\n+    font-size: 2rem;\n }\n \n @keyframes expandCircle1 {\n     /* 0% {\n"
+                },
+                {
+                    "date": 1722891298209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,10 +50,10 @@\n }\n .circle-4 {\n     background-color: rgb(233, 58, 58);\n     animation: expandCircle4 1s ease forwards;\n-    animation-delay: 1.2s;\n-    font-size: 2rem;\n+    animation-delay: 1.2s;x\n+    font-size: 5rem;\n }\n \n @keyframes expandCircle1 {\n     /* 0% {\n"
+                },
+                {
+                    "date": 1722901602240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,10 +50,11 @@\n }\n .circle-4 {\n     background-color: rgb(233, 58, 58);\n     animation: expandCircle4 1s ease forwards;\n-    animation-delay: 1.2s;x\n+    animation-delay: 1.2s;\n     font-size: 5rem;\n+    cus\n }\n \n @keyframes expandCircle1 {\n     /* 0% {\n"
+                },
+                {
+                    "date": 1722977180710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,49 +52,49 @@\n     background-color: rgb(233, 58, 58);\n     animation: expandCircle4 1s ease forwards;\n     animation-delay: 1.2s;\n     font-size: 5rem;\n-    cus\n+    cursor: pointer;\n }\n \n @keyframes expandCircle1 {\n-    /* 0% {\n+    0% {\n         width: 0;\n         height: 0;\n-    } */\n+    }\n     100% {\n         width: 2000px;\n         height: 2000px;\n     }\n }\n \n @keyframes expandCircle2 {\n-    /* 0% {\n+    0% {\n         width: 0;\n         height: 0;\n-    } */\n+    }\n     100% {\n         width: 1500px;\n         height: 1500px;\n     }\n }\n \n @keyframes expandCircle3 {\n-    /* 0% {\n+    0% {\n         width: 0;\n         height: 0;\n-    } */\n+    }\n     100% {\n         width: 1000px;\n         height: 1000px;\n     }\n }\n \n @keyframes expandCircle4 {\n-    /* 0% {\n+    0% {\n         width: 0;\n         height: 0;\n-    } */\n+    }\n     100% {\n         width: 500px;\n         height: 500px;\n     }\n"
+                },
+                {
+                    "date": 1722997502600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,10 @@\n     font-size: 5rem;\n     cursor: pointer;\n }\n \n+\n+\n @keyframes expandCircle1 {\n     0% {\n         width: 0;\n         height: 0;\n"
+                },
+                {
+                    "date": 1722997511811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,10 +55,12 @@\n     font-size: 5rem;\n     cursor: pointer;\n }\n \n+#authorize_button{\n+    back\n+}\n \n-\n @keyframes expandCircle1 {\n     0% {\n         width: 0;\n         height: 0;\n"
+                },
+                {
+                    "date": 1722997522084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,11 @@\n     cursor: pointer;\n }\n \n #authorize_button{\n-    back\n+    background-color: transparent;\n+    border: none;\n+    \n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997545691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \n #authorize_button{\n     background-color: transparent;\n     border: none;\n-    \n+    font-size: la;\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997560007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \n #authorize_button{\n     background-color: transparent;\n     border: none;\n-    font-size: la;\n+    font-size: xx-large;\n }\n \n @keyframes expandCircle1 {\n     0% {\n@@ -105,4 +105,14 @@\n         height: 500px;\n     }\n }\n \n+@keyframes expandCircle4 {\n+    0% {\n+        width: 0;\n+        height: 0;\n+    }\n+    100% {\n+        width: 500px;\n+        height: 500px;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722997567421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n         height: 500px;\n     }\n }\n \n-@keyframes expandCircle4 {\n+@keyframes authorizeAnimation {\n     0% {\n         width: 0;\n         height: 0;\n     }\n"
+                },
+                {
+                    "date": 1722997572870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,10 +107,9 @@\n }\n \n @keyframes authorizeAnimation {\n     0% {\n-        width: 0;\n-        height: 0;\n+        \n     }\n     100% {\n         width: 500px;\n         height: 500px;\n"
+                },
+                {
+                    "date": 1722997583980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,9 +107,9 @@\n }\n \n @keyframes authorizeAnimation {\n     0% {\n-        \n+        opacity: 0;\n     }\n     100% {\n         width: 500px;\n         height: 500px;\n"
+                },
+                {
+                    "date": 1722997596590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n #authorize_button{\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n+    an\n }\n \n @keyframes expandCircle1 {\n     0% {\n@@ -110,8 +111,7 @@\n     0% {\n         opacity: 0;\n     }\n     100% {\n-        width: 500px;\n-        height: 500px;\n+       opacity: 1;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722997604879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n #authorize_button{\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n-    an\n+    animation: authorizeAnimation 1.2s;\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997623621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,10 @@\n }\n \n @keyframes authorizeAnimation {\n     0% {\n-        opacity: 0;\n+        /* opacity: 0; */\n+        \n     }\n     100% {\n        opacity: 1;\n     }\n"
+                },
+                {
+                    "date": 1722997630144,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,10 +109,11 @@\n \n @keyframes authorizeAnimation {\n     0% {\n         /* opacity: 0; */\n-        \n+        display: none;\n     }\n     100% {\n-       opacity: 1;\n+        display: none;\n+        opacity: 1;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722997636051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,8 +112,7 @@\n         /* opacity: 0; */\n         display: none;\n     }\n     100% {\n-        display: none;\n-        opacity: 1;\n+        opacity: block;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1722997643345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,9 +108,8 @@\n }\n \n @keyframes authorizeAnimation {\n     0% {\n-        /* opacity: 0; */\n         display: none;\n     }\n     100% {\n         opacity: block;\n"
+                },
+                {
+                    "date": 1722997649782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n #authorize_button{\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n-    animation: authorizeAnimation 1.2s;\n+    animation: authorizeAnimation 2s;\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997655255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n #authorize_button{\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n-    animation: authorizeAnimation 2s;\n+    animation: authorizeAnimation 5s;\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997673050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n #authorize_button{\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n-    animation: authorizeAnimation 5s;\n+    animation: authorizeAnimation ;\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997683015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n #authorize_button{\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n-    animation: authorizeAnimation ;\n+    animation: authorizeAnimation 1s 5s;\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997691224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n #authorize_button{\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n-    animation: authorizeAnimation 1s 5s;\n+    animation: authorizeAnimation 5s 5s;\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997781236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,8 @@\n #authorize_button{\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n-    animation: authorizeAnimation 5s 5s;\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997882364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,10 @@\n #authorize_button{\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n+    opacity: 0; /* Initially hidden */\n+    transition: opacity 0.5s ease-in; /* Smooth transition */\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997891803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,12 @@\n     opacity: 0; /* Initially hidden */\n     transition: opacity 0.5s ease-in; /* Smooth transition */\n }\n \n+#authorize_button.show {\n+    opacity: 1; /* Fully visible */\n+  }\n+\n @keyframes expandCircle1 {\n     0% {\n         width: 0;\n         height: 0;\n"
+                },
+                {
+                    "date": 1722997956449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n     transition: opacity 0.5s ease-in; /* Smooth transition */\n }\n \n #authorize_button.show {\n-    opacity: 1; /* Fully visible */\n+    display: block;\n   }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                },
+                {
+                    "date": 1722997963137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,10 +59,9 @@\n #authorize_button{\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n-    opacity: 0; /* Initially hidden */\n-    transition: opacity 0.5s ease-in; /* Smooth transition */\n+    border: none;\n }\n \n #authorize_button.show {\n     display: block;\n"
+                },
+                {
+                    "date": 1722998032767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,19 +55,18 @@\n     font-size: 5rem;\n     cursor: pointer;\n }\n \n-#authorize_button{\n+#authorize_button {\n+    display: none; /* Initially hidden */\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n-    border: none;\n-}\n+  }\n \n-#authorize_button.show {\n-    display: block;\n+  #authorize_button.show {\n+    display: block; /* Make the button visible */\n   }\n-\n @keyframes expandCircle1 {\n     0% {\n         width: 0;\n         height: 0;\n"
+                },
+                {
+                    "date": 1722998076866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n     display: none; /* Initially hidden */\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n+    color\n   }\n \n   #authorize_button.show {\n     display: block; /* Make the button visible */\n"
+                },
+                {
+                    "date": 1722998088769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,9 +60,10 @@\n     display: none; /* Initially hidden */\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n-    color\n+    color: white;\n+    font\n   }\n \n   #authorize_button.show {\n     display: block; /* Make the button visible */\n"
+                },
+                {
+                    "date": 1722998115229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,14 +61,14 @@\n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n     color: white;\n-    font\n-  }\n+    font-weight: bolder;\n+}\n \n-  #authorize_button.show {\n+#authorize_button.show {\n     display: block; /* Make the button visible */\n-  }\n+}\n @keyframes expandCircle1 {\n     0% {\n         width: 0;\n         height: 0;\n@@ -118,5 +118,5 @@\n     }\n     100% {\n         opacity: block;\n     }\n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1722998139269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n     animation: expandCircle4 1s ease forwards;\n     animation-delay: 1.2s;\n     font-size: 5rem;\n     cursor: pointer;\n+    border: 1px solid white;\n }\n \n #authorize_button {\n     display: none; /* Initially hidden */\n"
+                },
+                {
+                    "date": 1722998287961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,10 @@\n     top: 0;\n     height: 450px;\n }\n \n+.log\n+\n .circle-1,\n .circle-2,\n .circle-3,\n .circle-4 {\n"
+                },
+                {
+                    "date": 1722998293786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,11 @@\n     top: 0;\n     height: 450px;\n }\n \n-.log\n+.log.slideUp{\n+    \n+}\n \n .circle-1,\n .circle-2,\n .circle-3,\n"
+                },
+                {
+                    "date": 1722998299828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     height: 450px;\n }\n \n .log.slideUp{\n-    \n+    animation: ;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1722998309717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n     height: 450px;\n }\n \n .log.slideUp{\n-    animation: ;\n+    animation: slideUp 1s;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1722998318748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,8 +22,9 @@\n     height: 450px;\n }\n \n .log.slideUp{\n+    display: block;\n     animation: slideUp 1s;\n }\n \n .circle-1,\n"
+                },
+                {
+                    "date": 1722998329261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n     left: 0;\n     right: 0;\n     top: 0;\n     height: 450px;\n+    display: none;\n }\n \n .log.slideUp{\n     display: block;\n@@ -71,9 +72,9 @@\n     font-weight: bolder;\n }\n \n #authorize_button.show {\n-    display: block; /* Make the button visible */\n+    display: block;\n }\n @keyframes expandCircle1 {\n     0% {\n         width: 0;\n"
+                },
+                {
+                    "date": 1722998335754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n     border: 1px solid white;\n }\n \n #authorize_button {\n-    display: none; /* Initially hidden */\n+    display: none; \n     background-color: transparent;\n     border: none;\n     font-size: xx-large;\n     color: white;\n@@ -118,9 +118,9 @@\n         height: 500px;\n     }\n }\n \n-@keyframes authorizeAnimation {\n+@keyframes disp {\n     0% {\n         display: none;\n     }\n     100% {\n"
+                },
+                {
+                    "date": 1722998349319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,11 +118,11 @@\n         height: 500px;\n     }\n }\n \n-@keyframes disp {\n+@keyframes slideUp {\n     0% {\n-        display: none;\n+        opacity: ;: none;\n     }\n     100% {\n         opacity: block;\n     }\n"
+                },
+                {
+                    "date": 1722998354582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,10 +120,10 @@\n }\n \n @keyframes slideUp {\n     0% {\n-        opacity: ;: none;\n+        opacity: 0;\n     }\n     100% {\n-        opacity: block;\n+        opacity: 1;\n     }\n }\n"
+                },
+                {
+                    "date": 1722998376053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n .log.slideUp{\n     display: block;\n-    animation: slideUp 1s;\n+    /* animation: slideUp 1s; */\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1722998427624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n     height: 100dvh;\n     width: 100dvw;\n     display: grid;\n     place-content: center;\n-    /* background-color: rgb(252, 150, 150); */\n     position: relative;\n }\n \n .logo {\n"
+                },
+                {
+                    "date": 1722998470774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,10 @@\n }\n \n @keyframes slideUp {\n     0% {\n-        opacity: 0;\n+        /* opacity: 0; */\n+        left: 0;\n     }\n     100% {\n         opacity: 1;\n     }\n"
+                },
+                {
+                    "date": 1722998477525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,7 +123,8 @@\n         /* opacity: 0; */\n         left: 0;\n     }\n     100% {\n-        opacity: 1;\n+        /* opacity: 1; */\n+        left: 10px;\n     }\n }\n"
+                },
+                {
+                    "date": 1722998523123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     height: 450px;\n     display: none;\n }\n \n-.log.slideUp{\n+.log0.slideUp{\n     display: block;\n     /* animation: slideUp 1s; */\n }\n \n"
+                },
+                {
+                    "date": 1722998556989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     height: 450px;\n     display: none;\n }\n \n-.log0.slideUp{\n+.slideUp{\n     display: block;\n     /* animation: slideUp 1s; */\n }\n \n"
+                },
+                {
+                    "date": 1722998576382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,13 @@\n \n .slideUp{\n     display: block;\n     /* animation: slideUp 1s; */\n+    position: absolute;\n+    left: 0;\n+    right: 0;\n+    top: 0;\n+    height: 450px;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1722998585312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n     left: 0;\n     right: 0;\n     top: 0;\n     height: 450px;\n+    z-index: 10;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1722998593383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     left: 0;\n     right: 0;\n     top: 0;\n     height: 450px;\n-    z-index: 10;\n+    z-index: 10 ;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1722998622092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,14 +24,8 @@\n \n .slideUp{\n     display: block;\n     /* animation: slideUp 1s; */\n-    position: absolute;\n-    left: 0;\n-    right: 0;\n-    top: 0;\n-    height: 450px;\n-    z-index: 10 ;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1722998628826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n }\n \n .slideUp{\n     display: block;\n-    /* animation: slideUp 1s; */\n+    animation: slideUp 1s;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1722998640259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,12 +119,12 @@\n }\n \n @keyframes slideUp {\n     0% {\n-        /* opacity: 0; */\n+        opacity: 0;\n         left: 0;\n     }\n     100% {\n-        /* opacity: 1; */\n+        opacity: 1;\n         left: 10px;\n     }\n }\n"
+                },
+                {
+                    "date": 1722998649489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,11 +120,11 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        left: 0;\n+        bottom: 0;\n     }\n     100% {\n         opacity: 1;\n-        left: 10px;\n+        bottom: 10px;\n     }\n }\n"
+                },
+                {
+                    "date": 1722998661827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,7 +124,7 @@\n         bottom: 0;\n     }\n     100% {\n         opacity: 1;\n-        bottom: 10px;\n+        bottom: 50px;\n     }\n }\n"
+                },
+                {
+                    "date": 1722998672799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        bottom: 0;\n+        top: 0;\n     }\n     100% {\n         opacity: 1;\n         bottom: 50px;\n"
+                },
+                {
+                    "date": 1722998692714,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n     position: absolute;\n     left: 0;\n     right: 0;\n     top: 0;\n+    bottom: ;\n     height: 450px;\n     display: none;\n }\n \n@@ -124,7 +125,7 @@\n         top: 0;\n     }\n     100% {\n         opacity: 1;\n-        bottom: 50px;\n+        top: 50px;\n     }\n }\n"
+                },
+                {
+                    "date": 1722998703913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     position: absolute;\n     left: 0;\n     right: 0;\n     top: 0;\n-    bottom: ;\n+    bottom: 0;\n     height: 450px;\n     display: none;\n }\n \n@@ -121,11 +121,11 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        top: 0;\n+        bottom: 0;\n     }\n     100% {\n         opacity: 1;\n-        top: 50px;\n+        bottom: 50px;\n     }\n }\n"
+                },
+                {
+                    "date": 1723000474133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,7 +125,7 @@\n         bottom: 0;\n     }\n     100% {\n         opacity: 1;\n-        bottom: 50px;\n+        bottom: 0;\n     }\n }\n"
+                },
+                {
+                    "date": 1723000479421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        bottom: 0;\n+        bottom: 50px;\n     }\n     100% {\n         opacity: 1;\n         bottom: 0;\n"
+                },
+                {
+                    "date": 1723000491284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        bottom: 50px;\n+        bottom: -50px;\n     }\n     100% {\n         opacity: 1;\n         bottom: 0;\n"
+                },
+                {
+                    "date": 1723000522155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n .slideUp{\n     display: block;\n-    animation: slideUp 1s;\n+    animation: slideUp 3s;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1723000531249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n .slideUp{\n     display: block;\n-    animation: slideUp 3s;\n+    animation: slideUp 1s;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1723000540110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n .slideUp{\n     display: block;\n-    animation: slideUp 1s;\n+    animation: slideUp 1s ;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1723000548911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n .slideUp{\n     display: block;\n-    animation: slideUp 1s ;\n+    animation: slideUp 1s forwards;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1723000574406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n .slideUp{\n     display: block;\n-    animation: slideUp 1s forwards;\n+    animation: slideUp 10s forwards;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1723000590041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,11 +121,11 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        bottom: -50px;\n+        top: -50px;\n     }\n     100% {\n         opacity: 1;\n-        bottom: 0;\n+        top: 0;\n     }\n }\n"
+                },
+                {
+                    "date": 1723000601562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,11 +121,11 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        top: -50px;\n+        left: -50px;\n     }\n     100% {\n         opacity: 1;\n-        top: 0;\n+        left: 0;\n     }\n }\n"
+                },
+                {
+                    "date": 1723000617924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n .slideUp{\n     display: block;\n-    animation: slideUp 10s forwards;\n+    animation: slideUp 2s forwards;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1723000624251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n }\n \n .slideUp{\n     display: block;\n-    animation: slideUp 2s forwards;\n+    animation: slideUp 1s forwards;\n }\n \n .circle-1,\n .circle-2,\n"
+                },
+                {
+                    "date": 1723000639218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,11 +121,11 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        left: -50px;\n+        bottom: -50px;\n     }\n     100% {\n         opacity: 1;\n-        left: 0;\n+        bottom: 0;\n     }\n }\n"
+                },
+                {
+                    "date": 1723000728897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,11 +121,11 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        bottom: -50px;\n+        \n     }\n     100% {\n         opacity: 1;\n-        bottom: 0;\n+        \n     }\n }\n"
+                },
+                {
+                    "date": 1723000735275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,11 +121,11 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        \n+        tr\n     }\n     100% {\n         opacity: 1;\n-        \n+        tr\n     }\n }\n"
+                },
+                {
+                    "date": 1723000744084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,11 +121,11 @@\n \n @keyframes slideUp {\n     0% {\n         opacity: 0;\n-        transform: translate();\n+        transform: t;\n     }\n     100% {\n         opacity: 1;\n-        transform: translate();\n+        transform: t;\n     }\n }\n"
+                }
+            ],
+            "date": 1722872598242,
+            "name": "Commit-0",
+            "content": "body{\n    display: grid; place-content: center\n}"
+        }
+    ]
+}

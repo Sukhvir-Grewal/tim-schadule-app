@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.main-container {
+    height: 100dvh;
+    width: 100dvw;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 450px;
+    display: none;
+}
+
+.slideUp{
+    display: block;
+    animation: slideUp 1s forwards;
+}
+
+.circle-1,
+.circle-2,
+.circle-3,
+.circle-4 {
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.circle-1 {
+    background-color: rgb(228, 129, 129);
+    animation: expandCircle1 1s ease forwards;
+    animation-delay: 0s;
+}
+
+.circle-2 {
+    background-color: rgb(233, 94, 94);
+    animation: expandCircle2 1s ease forwards;
+    animation-delay: 0.3s;
+}
+
+.circle-3 {
+    background-color: rgb(236, 72, 72);
+    animation: expandCircle3 1s ease forwards;
+    animation-delay: 0.8s;
+}
+.circle-4 {
+    background-color: rgb(233, 58, 58);
+    animation: expandCircle4 1s ease forwards;
+    animation-delay: 1.2s;
+    font-size: 5rem;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#authorize_button {
+    display: none; 
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+    color: white;
+    font-weight: bolder;
+}
+
+#authorize_button.show {
+    display: block;
+}
+@keyframes expandCircle1 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 2000px;
+        height: 2000px;
+    }
+}
+
+@keyframes expandCircle2 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 1500px;
+        height: 1500px;
+    }
+}
+
+@keyframes expandCircle3 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 1000px;
+        height: 1000px;
+    }
+}
+
+@keyframes expandCircle4 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

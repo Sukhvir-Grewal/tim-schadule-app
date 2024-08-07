@@ -1,0 +1,182 @@
+{
+    "sourceFile": "static_version/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 41,
+            "patches": [
+                {
+                    "date": 1722872258669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1722872265698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,21 +2,21 @@\n <html>\n     <head>\n         <title>Tim Schedule App</title>\n         <meta charset=\"utf-8\" />\n-        \n     </head>\n     <body style=\"display: grid; place-content: center\">\n         <p>Fetch Data</p>\n \n         <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n             Authorize\n         </button>\n \n-        <pre id=\"content\" ></pre>\n+        <pre id=\"content\"></pre>\n \n         <script src=\"./script.js\"></script>\n-        <script async\n+        <script\n+            async\n             defer\n             src=\"https://apis.google.com/js/api.js\"\n             onload=\"gapiLoaded()\"\n         ></script>\n"
+                },
+                {
+                    "date": 1722872569861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n     <head>\n         <title>Tim Schedule App</title>\n         <meta charset=\"utf-8\" />\n     </head>\n+    <style></style>\n     <body style=\"display: grid; place-content: center\">\n         <p>Fetch Data</p>\n \n         <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n"
+                },
+                {
+                    "date": 1722872578636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     <head>\n         <title>Tim Schedule App</title>\n         <meta charset=\"utf-8\" />\n     </head>\n-    <style></style>\n+    link\n     <body style=\"display: grid; place-content: center\">\n         <p>Fetch Data</p>\n \n         <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n"
+                },
+                {
+                    "date": 1722872588931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n     <head>\n         <title>Tim Schedule App</title>\n         <meta charset=\"utf-8\" />\n     </head>\n-    link\n-    <body style=\"display: grid; place-content: center\">\n+    <link rel=\"stylesheet\" href=\"style.css\">\n+    <body style=\"\">\n         <p>Fetch Data</p>\n \n         <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n             Authorize\n"
+                },
+                {
+                    "date": 1722872607221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n         <title>Tim Schedule App</title>\n         <meta charset=\"utf-8\" />\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\">\n-    <body style=\"\">\n+    <body>\n+        \n         <p>Fetch Data</p>\n \n         <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n             Authorize\n"
+                },
+                {
+                    "date": 1722872615404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n         <meta charset=\"utf-8\" />\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\">\n     <body>\n-        \n+        <div class=\"main-container\">\n+            \n+        </div>\n         <p>Fetch Data</p>\n \n         <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n             Authorize\n"
+                },
+                {
+                    "date": 1722872729406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,17 @@\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\">\n     <body>\n         <div class=\"main-container\">\n-            \n+\n         </div>\n-        <p>Fetch Data</p>\n+        <!-- <p>Fetch Data</p>\n \n         <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n             Authorize\n         </button>\n \n-        <pre id=\"content\"></pre>\n+        <pre id=\"content\"></pre> -->\n \n         <script src=\"./script.js\"></script>\n         <script\n             async\n"
+                },
+                {
+                    "date": 1722872735851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,21 +3,12 @@\n     <head>\n         <title>Tim Schedule App</title>\n         <meta charset=\"utf-8\" />\n     </head>\n-    <link rel=\"stylesheet\" href=\"style.css\">\n+    <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n-        <div class=\"main-container\">\n+        <div class=\"main-container\"></div>\n \n-        </div>\n-        <!-- <p>Fetch Data</p>\n-\n-        <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n-            Authorize\n-        </button>\n-\n-        <pre id=\"content\"></pre> -->\n-\n         <script src=\"./script.js\"></script>\n         <script\n             async\n             defer\n@@ -31,4 +22,12 @@\n             onload=\"gisLoaded()\"\n         ></script>\n     </body>\n </html>\n+\n+<!-- <p>Fetch Data</p>\n+\n+        <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+            Authorize\n+        </button>\n+\n+        <pre id=\"content\"></pre> -->\n"
+                },
+                {
+                    "date": 1722872742828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n         <div class=\"main-container\"></div>\n-\n+        \n         <script src=\"./script.js\"></script>\n         <script\n             async\n             defer\n"
+                },
+                {
+                    "date": 1722872751344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,12 @@\n         <meta charset=\"utf-8\" />\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n-        <div class=\"main-container\"></div>\n-        \n+        <div class=\"main-container\">\n+            .\n+        </div>\n+\n         <script src=\"./script.js\"></script>\n         <script\n             async\n             defer\n"
+                },
+                {
+                    "date": 1722872758933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n         <div class=\"main-container\">\n-            .\n+            .cric\n         </div>\n \n         <script src=\"./script.js\"></script>\n         <script\n"
+                },
+                {
+                    "date": 1722872764192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n         <div class=\"main-container\">\n-            .cric\n+            .circle-1\n         </div>\n \n         <script src=\"./script.js\"></script>\n         <script\n"
+                },
+                {
+                    "date": 1722889342261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,13 @@\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n         <div class=\"main-container\">\n-            .circle-1\n+            <div class=\"circle-1\">\n+                <div class=\"circle-1\">\n+                \n+                </div>\n+            </div>\n         </div>\n \n         <script src=\"./script.js\"></script>\n         <script\n"
+                },
+                {
+                    "date": 1722889569493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,12 @@\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n         <div class=\"main-container\">\n             <div class=\"circle-1\">\n-                <div class=\"circle-1\">\n+                <div class=\"circle-2\">\n+                    <div class=\"circle-2\">\n                 \n+                    </div>\n                 </div>\n             </div>\n         </div>\n \n"
+                },
+                {
+                    "date": 1722889608159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     <body>\n         <div class=\"main-container\">\n             <div class=\"circle-1\">\n                 <div class=\"circle-2\">\n-                    <div class=\"circle-2\">\n+                    <div class=\"circle-3\">\n                 \n                     </div>\n                 </div>\n             </div>\n"
+                },
+                {
+                    "date": 1722889737125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n         <div class=\"main-container\">\n             <div class=\"circle-1\">\n+                <img src=\"\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n                 \n                     </div>\n"
+                },
+                {
+                    "date": 1722889751983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n         <div class=\"main-container\">\n             <div class=\"circle-1\">\n-                <img src=\"\" alt=\"\">\n+                <img src=\"./timlogo.svg\" class=\"\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n                 \n                     </div>\n"
+                },
+                {
+                    "date": 1722890939564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,12 +7,14 @@\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n         <div class=\"main-container\">\n             <div class=\"circle-1\">\n-                <img src=\"./timlogo.svg\" class=\"\" alt=\"\">\n+                <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n+                        <div class=\"circle-3\">\n                 \n+                        </div>\n                     </div>\n                 </div>\n             </div>\n         </div>\n"
+                },
+                {
+                    "date": 1722891084670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,12 @@\n             <div class=\"circle-1\">\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n-                        <div class=\"circle-3\">\n-                \n+                        <div class=\"circle-4\">\n+                            <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+                                Authorize\n+                            </button>\n                         </div>\n                     </div>\n                 </div>\n             </div>\n"
+                },
+                {
+                    "date": 1722891128866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n                         <div class=\"circle-4\">\n-                            <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+                            <button >\n                                 Authorize\n                             </button>\n                         </div>\n                     </div>\n"
+                },
+                {
+                    "date": 1722891134242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,11 @@\n             <div class=\"circle-1\">\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n-                        <div class=\"circle-4\">\n+                        <div class=\"circle-4\" id=\"authorize_button\" onclick=\"handleAuthClick()\">\n                             <button >\n                                 Authorize\n-                            </button>\n                         </div>\n                     </div>\n                 </div>\n             </div>\n"
+                },
+                {
+                    "date": 1722977186884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,9 @@\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n                         <div class=\"circle-4\" id=\"authorize_button\" onclick=\"handleAuthClick()\">\n-                            <button >\n-                                Authorize\n+                                <!-- Authorize -->\n                         </div>\n                     </div>\n                 </div>\n             </div>\n"
+                },
+                {
+                    "date": 1722977200257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <meta charset=\"utf-8\" />\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n-        <div class=\"main-container\">\n+        <!-- <div class=\"main-container\">\n             <div class=\"circle-1\">\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n@@ -16,9 +16,9 @@\n                         </div>\n                     </div>\n                 </div>\n             </div>\n-        </div>\n+        </div> -->\n \n         <script src=\"./script.js\"></script>\n         <script\n             async\n"
+                },
+                {
+                    "date": 1722977205578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,20 +5,19 @@\n         <meta charset=\"utf-8\" />\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n-        <!-- <div class=\"main-container\">\n+        <div class=\"main-container\">\n             <div class=\"circle-1\">\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n                         <div class=\"circle-4\" id=\"authorize_button\" onclick=\"handleAuthClick()\">\n-                                <!-- Authorize -->\n                         </div>\n                     </div>\n                 </div>\n             </div>\n-        </div> -->\n+        </div>\n \n         <script src=\"./script.js\"></script>\n         <script\n             async\n"
+                },
+                {
+                    "date": 1722977218774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <meta charset=\"utf-8\" />\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n-        <div class=\"main-container\">\n+        <!-- <div class=\"main-container\">\n             <div class=\"circle-1\">\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n@@ -15,9 +15,16 @@\n                         </div>\n                     </div>\n                 </div>\n             </div>\n-        </div>\n+        </div> -->\n+        <p>Fetch Data</p>\n+        \n+                <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+                    Authorize\n+                </button>\n+        \n+                <pre id=\"content\"></pre>\n \n         <script src=\"./script.js\"></script>\n         <script\n             async\n@@ -33,11 +40,4 @@\n         ></script>\n     </body>\n </html>\n \n-<!-- <p>Fetch Data</p>\n-\n-        <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n-            Authorize\n-        </button>\n-\n-        <pre id=\"content\"></pre> -->\n"
+                },
+                {
+                    "date": 1722977224274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,16 +16,17 @@\n                     </div>\n                 </div>\n             </div>\n         </div> -->\n+\n         <p>Fetch Data</p>\n-        \n-                <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n-                    Authorize\n-                </button>\n-        \n-                <pre id=\"content\"></pre>\n \n+        <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+            Authorize\n+        </button>\n+\n+        <pre id=\"content\"></pre>\n+\n         <script src=\"./script.js\"></script>\n         <script\n             async\n             defer\n@@ -39,5 +40,4 @@\n             onload=\"gisLoaded()\"\n         ></script>\n     </body>\n </html>\n-\n"
+                },
+                {
+                    "date": 1722977256239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         </div> -->\n \n         <p>Fetch Data</p>\n \n-        <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+        <button id=\"authorize_button\" onclick=\"handleAuthClick()\" >\n             Authorize\n         </button>\n \n         <pre id=\"content\"></pre>\n"
+                },
+                {
+                    "date": 1722977262347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         </div> -->\n \n         <p>Fetch Data</p>\n \n-        <button id=\"authorize_button\" onclick=\"handleAuthClick()\" >\n+        <button id=\"authorize_button\" onclick=\"handleAuthClick()\" style=\"\">\n             Authorize\n         </button>\n \n         <pre id=\"content\"></pre>\n"
+                },
+                {
+                    "date": 1722977269118,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         </div> -->\n \n         <p>Fetch Data</p>\n \n-        <button id=\"authorize_button\" onclick=\"handleAuthClick()\" style=\"\">\n+        <button id=\"authorize_button\" onclick=\"handleAuthClick()\" style=\"font-size: 500px;\">\n             Authorize\n         </button>\n \n         <pre id=\"content\"></pre>\n"
+                },
+                {
+                    "date": 1722977868225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,11 @@\n                 </div>\n             </div>\n         </div> -->\n \n-        <p>Fetch Data</p>\n+        <p>Fetch Datasdfsdf</p>\n \n-        <button id=\"authorize_button\" onclick=\"handleAuthClick()\" style=\"font-size: 500px;\">\n+        <button id=\"authorize_button\" onclick=\"handleAuthClick()\" style=\"font-size: 100px;\">\n             Authorize\n         </button>\n \n         <pre id=\"content\"></pre>\n"
+                },
+                {
+                    "date": 1722997010870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,11 @@\n                 </div>\n             </div>\n         </div> -->\n \n-        <p>Fetch Datasdfsdf</p>\n+        <p>Fetch Data</p>\n \n-        <button id=\"authorize_button\" onclick=\"handleAuthClick()\" style=\"font-size: 100px;\">\n+        <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n             Authorize\n         </button>\n \n         <pre id=\"content\"></pre>\n"
+                },
+                {
+                    "date": 1722997268645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         <meta charset=\"utf-8\" />\n     </head>\n     <link rel=\"stylesheet\" href=\"style.css\" />\n     <body>\n-        <!-- <div class=\"main-container\">\n+        <div class=\"main-container\">\n             <div class=\"circle-1\">\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n@@ -15,9 +15,9 @@\n                         </div>\n                     </div>\n                 </div>\n             </div>\n-        </div> -->\n+        </div>\n \n         <p>Fetch Data</p>\n \n         <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n"
+                },
+                {
+                    "date": 1722997318346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n                         <div class=\"circle-4\" id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+                            Authorize\n                         </div>\n                     </div>\n                 </div>\n             </div>\n"
+                },
+                {
+                    "date": 1722997323745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n                         <div class=\"circle-4\" id=\"authorize_button\" onclick=\"handleAuthClick()\">\n-                            Authorize\n                         </div>\n                     </div>\n                 </div>\n             </div>\n"
+                },
+                {
+                    "date": 1722997447153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,15 +17,15 @@\n                 </div>\n             </div>\n         </div>\n \n-        <p>Fetch Data</p>\n+        <!-- <p>Fetch Data</p>\n \n         <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n             Authorize\n         </button>\n \n-        <pre id=\"content\"></pre>\n+        <pre id=\"content\"></pre> -->\n \n         <script src=\"./script.js\"></script>\n         <script\n             async\n"
+                },
+                {
+                    "date": 1722997452802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n                         <div class=\"circle-4\" id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+                            \n                         </div>\n                     </div>\n                 </div>\n             </div>\n"
+                },
+                {
+                    "date": 1722997458460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,11 @@\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n                         <div class=\"circle-4\" id=\"authorize_button\" onclick=\"handleAuthClick()\">\n-                            \n+                            <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+                                Authorize\n+                            </button>\n                         </div>\n                     </div>\n                 </div>\n             </div>\n"
+                },
+                {
+                    "date": 1722997467659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             <div class=\"circle-1\">\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n-                        <div class=\"circle-4\" id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+                        <div class=\"circle-4\" \">\n                             <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n                                 Authorize\n                             </button>\n                         </div>\n"
+                },
+                {
+                    "date": 1722997473090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n             <div class=\"circle-1\">\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n-                        <div class=\"circle-4\" \">\n-                            <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n+                        <div class=\"circle-4\">\n+                            <button id=\"authorize_button\" \">\n                                 Authorize\n                             </button>\n                         </div>\n                     </div>\n"
+                },
+                {
+                    "date": 1722997478662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n             <div class=\"circle-1\">\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n-                        <div class=\"circle-4\">\n-                            <button id=\"authorize_button\" \">\n+                        <div class=\"circle-4\" onclick=\"handleAuthClick()\"\">\n+                            <button id=\"authorize_button\">\n                                 Authorize\n                             </button>\n                         </div>\n                     </div>\n"
+                },
+                {
+                    "date": 1722998389571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             <div class=\"circle-1\">\n                 <img src=\"./timlogo.svg\" class=\"logo\" alt=\"\">\n                 <div class=\"circle-2\">\n                     <div class=\"circle-3\">\n-                        <div class=\"circle-4\" onclick=\"handleAuthClick()\"\">\n+                        <div class=\"circle-4\" onclick=\"handleAuthClick()\">\n                             <button id=\"authorize_button\">\n                                 Authorize\n                             </button>\n                         </div>\n@@ -20,16 +20,8 @@\n                 </div>\n             </div>\n         </div>\n \n-        <!-- <p>Fetch Data</p>\n-\n-        <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n-            Authorize\n-        </button>\n-\n-        <pre id=\"content\"></pre> -->\n-\n         <script src=\"./script.js\"></script>\n         <script\n             async\n             defer\n"
+                }
+            ],
+            "date": 1722872258669,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html>\n    <head>\n        <title>Tim Schedule App</title>\n        <meta charset=\"utf-8\" />\n        \n    </head>\n    <body style=\"display: grid; place-content: center\">\n        <p>Fetch Data</p>\n\n        <button id=\"authorize_button\" onclick=\"handleAuthClick()\">\n            Authorize\n        </button>\n\n        <pre id=\"content\" ></pre>\n\n        <script src=\"./script.js\"></script>\n        <script async\n            defer\n            src=\"https://apis.google.com/js/api.js\"\n            onload=\"gapiLoaded()\"\n        ></script>\n        <script\n            async\n            defer\n            src=\"https://accounts.google.com/gsi/client\"\n            onload=\"gisLoaded()\"\n        ></script>\n    </body>\n</html>\n"
+        }
+    ]
+}

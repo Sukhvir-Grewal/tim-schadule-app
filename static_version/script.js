@@ -14,6 +14,8 @@ const SCOPES = [
 let tokenClient;
 let gapiInited = false;
 let gisInited = false;
+let startDate = "";
+let endDate = "";
 
 document.getElementById("authorize_button").style.visibility = "hidden";
 
@@ -54,10 +56,10 @@ function handleAuthClick() {
             return;
         }
         document.getElementById("authorize_button").style.visibility = "hidden";
-        document.getElementById("content").textContent =
-            "Schedule has been Pushed To calender ^^";
+        // document.getElementById("content").innerHTML =
+        //     "Schedule has been Pushed To calendar ^^<br>";
 
-        await getRecentEmailFromSender()
+        await getRecentEmailFromSender();
     };
 
     if (gapi.client.getToken() === null) {
@@ -120,6 +122,7 @@ async function checkDuplicateEvent(newEvent) {
 
             if (duplicateEvent) {
                 // Duplicate event found, return an error
+
                 console.log("Duplicate event found. Event not added.");
                 return;
             }
@@ -137,10 +140,10 @@ async function getRecentEmailFromSender() {
     try {
         // List messages from the specified sender
         const res = await gapi.client.gmail.users.messages.list({
-            userId: 'me',
+            userId: "me",
             q: `from:noreply@clearviewconnect.com`,
             maxResults: 1,
-            orderBy: "date"
+            orderBy: "date",
         });
 
         const messages = res.result.messages;
@@ -161,7 +164,9 @@ async function getRecentEmailFromSender() {
             : emailData.payload.body.data;
 
         // Decode the body
-        const decodedBody = atob(encodedBody.replace(/-/g, "+").replace(/_/g, "/"));
+        const decodedBody = atob(
+            encodedBody.replace(/-/g, "+").replace(/_/g, "/")
+        );
 
         // Extract the schedule details
         const scheduleLines = decodedBody
@@ -183,12 +188,17 @@ async function getRecentEmailFromSender() {
                 const event = parseScheduleLine(line);
                 if (event) {
                     await checkDuplicateEvent(event);
-                } 
+                    // document.getElementById("content").innerHTML += `${line}`;
+                }
             } catch (error) {
                 console.error("Error parsing or adding event:", error.message);
             }
+            endDate = line.split(":")[0].trim();
         }
-        console.log("Finished processing email.");
+        startDate = scheduleLines[0].split(":")[0].trim();
+        document.getElementById(
+            "content"
+        ).innerHTML += `Schedule from ${startDate} to ${endDate} has been Posted on calender`;
     } catch (error) {
         console.error("Error fetching email:", error.message);
     }
@@ -265,3 +275,9 @@ function convertTo24Hour(time) {
 
     return [hours, minutes];
 }
+
+// animation stuff
+setTimeout(function () {
+    document.getElementById("authorize_button").classList.add("show");
+    document.querySelector(".logo").classList.add("slideUp");
+}, 2000);
