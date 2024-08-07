@@ -1,0 +1,26 @@
+{
+    "sourceFile": "node_version/.gitignore",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1723062878052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723062893704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-node_module\n\\ No newline at end of file\n+node_modules\n+package\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723062900709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,1 @@\n-node_modules\n-package\n\\ No newline at end of file\n+node_modules\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1723062878052,
+            "name": "Commit-0",
+            "content": "node_module"
+        }
+    ]
+}
