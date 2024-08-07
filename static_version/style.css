@@ -21,6 +21,7 @@
     bottom: 0;
     height: 450px;
     display: none;
+    pointer-events: none;
 }
 
 .slideUp{
