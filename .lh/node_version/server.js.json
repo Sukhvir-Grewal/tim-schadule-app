@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1723062992949,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723145613355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,31 @@\n-const express = require('express')\n-const path = require('path')\n+const express = require('express');\n+const path = require('path');\n+const dotenv = require('dotenv');\n+const favicon = require('serve-favicon')\n+// This is for the freeking warning i keep getting\n+const cookieParser = require('cookie-parser');\n \n+dotenv.config();\n \n-const app = express()\n\\ No newline at end of file\n-app.use(express.static('public'))\n+const app = express();\n+app.use(cookieParser());\n \n+app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));\n+\n+app.use(express.static(path.join(__dirname, 'public')));\n+\n+\n+app.get('/env', (req, res) => {\n+\tconst envData = {\n+\t\tclientId: process.env.CLIENT_ID,\n+\t\tapiKey: process.env.API_KEY\n+\t};\n+\tres.json(envData);\n+});\n+\n app.get('/', (req, res) => {\n-\tres.sendFile(path.join(__dirname, \"./index.html\"))\n-})\n+\tres.sendFile(path.join(__dirname, 'public', 'index.html'));\n+});\n \n-app.listen(3000, () => { console.log(\"server started\") })\n+app.listen(3000)\n+module.exports = app;\n"
+                },
+                {
+                    "date": 1723145955017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,6 +26,10 @@\n app.get('/', (req, res) => {\n \tres.sendFile(path.join(__dirname, 'public', 'index.html'));\n });\n \n+app.get('/privacy-policy', (req, res) => {\n+    res.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));\n+});\n+\n app.listen(3000)\n module.exports = app;\n"
                 }
             ],
             "date": 1723062992949,

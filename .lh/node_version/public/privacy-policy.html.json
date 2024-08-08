@@ -1,0 +1,26 @@
+{
+    "sourceFile": "node_version/public/privacy-policy.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1723146051447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723146074226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,36 @@\n <!DOCTYPE html>\n <html lang=\"en\">\n-<head>\n-    <meta charset=\"UTF-8\">\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n-    <title>Privacy Policy</title>\n-</head>\n-<body>\n-    <h1>Privacy Policy</h1>\n-    <p>Your privacy is important to us. It is our policy to respect your privacy regarding any information we may collect from you across our website, https://www.timschedule.com, and other sites we own and operate.</p>\n-    <h2>Information We Collect</h2>\n-    <p>We only collect information necessary to provide our services to you. This may include your name, email address, and other information relevant to your use of our services.</p>\n-    <h2>How We Use Your Information</h2>\n-    <p>We use the information we collect to provide, maintain, and improve our services. We do not share your information with third parties except as required by law.</p>\n-    <h2>Your Consent</h2>\n-    <p>By using our site, you consent to our privacy policy.</p>\n-    <h2>Contact Us</h2>\n-    <p>If you have any questions about our privacy policy, please contact us at [your-email@example.com].</p>\n-</body>\n+    <head>\n+        <meta charset=\"UTF-8\" />\n+        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n+        <title>Privacy Policy</title>\n+    </head>\n+    <body>\n+        <h1>Privacy Policy</h1>\n+        <p>\n+            Your privacy is important to us. It is our policy to respect your\n+            privacy regarding any information we may collect from you across our\n+            website, https://www.timschedule.com, and other sites we own and\n+            operate.\n+        </p>\n+        <h2>Information We Collect</h2>\n+        <p>\n+            We only collect information necessary to provide our services to\n+            you. This may include your name, email address, and other\n+            information relevant to your use of our services.\n+        </p>\n+        <h2>How We Use Your Information</h2>\n+        <p>\n+            We use the information we collect to provide, maintain, and improve\n+            our services. We do not share your information with third parties\n+            except as required by law.\n+        </p>\n+        <h2>Your Consent</h2>\n+        <p>By using our site, you consent to our privacy policy.</p>\n+        <h2>Contact Us</h2>\n+        <p>\n+            If you have any questions about our privacy policy, please contact\n+            us at sukhvir.\n+        </p>\n+    </body>\n </html>\n"
+                },
+                {
+                    "date": 1723146079466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,8 @@\n         <p>By using our site, you consent to our privacy policy.</p>\n         <h2>Contact Us</h2>\n         <p>\n             If you have any questions about our privacy policy, please contact\n-            us at sukhvir.\n+            us at sukhvirgrewal253@gmail.com.\n         </p>\n     </body>\n </html>\n"
+                }
+            ],
+            "date": 1723146051447,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Privacy Policy</title>\n</head>\n<body>\n    <h1>Privacy Policy</h1>\n    <p>Your privacy is important to us. It is our policy to respect your privacy regarding any information we may collect from you across our website, https://www.timschedule.com, and other sites we own and operate.</p>\n    <h2>Information We Collect</h2>\n    <p>We only collect information necessary to provide our services to you. This may include your name, email address, and other information relevant to your use of our services.</p>\n    <h2>How We Use Your Information</h2>\n    <p>We use the information we collect to provide, maintain, and improve our services. We do not share your information with third parties except as required by law.</p>\n    <h2>Your Consent</h2>\n    <p>By using our site, you consent to our privacy policy.</p>\n    <h2>Contact Us</h2>\n    <p>If you have any questions about our privacy policy, please contact us at [your-email@example.com].</p>\n</body>\n</html>\n"
+        }
+    ]
+}
