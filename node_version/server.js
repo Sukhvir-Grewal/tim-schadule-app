@@ -2,10 +2,12 @@ const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
 const favicon = require('serve-favicon')
+const cookieParser = require('cookie-parser');
 
 dotenv.config();
 
 const app = express();
+app.use(cookieParser());
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
 
