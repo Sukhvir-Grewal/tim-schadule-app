@@ -68,7 +68,7 @@ function handleAuthClick() {
             return;
         }
         document.getElementById("authorize_button").style.display = "none";
-        document.querySelector(".after_authorize").style.display = "block";
+        document.querySelector(".after_authorize").style.display = "flex";
 
         await getRecentEmailFromSender();
     };

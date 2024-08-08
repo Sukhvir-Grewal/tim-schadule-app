@@ -86,12 +86,11 @@
 }
 
 .after_authorize {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-size: 4rem;
     font-weight: bolder;
-    display: none;
     color: white;
 }
 
