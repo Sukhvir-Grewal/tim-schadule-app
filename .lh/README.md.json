@@ -1,0 +1,58 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1723143014199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723143094738,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-# \n\\ No newline at end of file\n+# INS\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723143104884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-# INS\n\\ No newline at end of file\n+# \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723143380183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,17 @@\n-# \n\\ No newline at end of file\n+# # Tim Schedule App\n+\n+## Overview\n+The Tim Schedule App is a web application designed to streamline the process of managing schedules for employees at our Tim Hortons locations. The app integrates with Google Calendar and Gmail to automatically fetch and manage calendar events from schedule emails.\n+\n+## Motivation\n+Before creating this app, I had to manually check my emails and add events to my Google Calendar because I liked its design and functionality. This process was time-consuming and tedious. I thought, \"Why not create a website that allows me to do all of this with one click?\" Not only would this save me time, but it would also benefit my coworkers, who could use this tool to streamline their own workflows.\n+\n+## Features\n+- Fetch recent emails from a specific sender\n+- Add events to Google Calendar\n+- Prevent duplicate events\n+- Persistent authorization to avoid re-login\n+\n+## Usage\n+\n+1. **Navigate to the application in your browser:**\n"
+                },
+                {
+                    "date": 1723143392356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,5 @@\n - Persistent authorization to avoid re-login\n \n ## Usage\n \n-1. **Navigate to the application in your browser:**\n+**Navigate to the application in your browser:**\n"
+                },
+                {
+                    "date": 1723143397774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,4 +14,5 @@\n \n ## Usage\n \n **Navigate to the application in your browser:**\n+    \n"
+                },
+                {
+                    "date": 1723143404949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,5 @@\n \n ## Usage\n \n **Navigate to the application in your browser:**\n-    \n+    [Tim]\n"
+                },
+                {
+                    "date": 1723143410689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,5 @@\n \n ## Usage\n \n **Navigate to the application in your browser:**\n-    [Tim]\n+    (tim)[]\n"
+                },
+                {
+                    "date": 1723143418294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,5 @@\n \n ## Usage\n \n **Navigate to the application in your browser:**\n-    (tim)[]\n+    [Ti]()\n"
+                },
+                {
+                    "date": 1723143423445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,5 @@\n \n ## Usage\n \n **Navigate to the application in your browser:**\n-    [Ti]()\n+    [TimSchedule.com]()\n"
+                },
+                {
+                    "date": 1723143430201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,5 @@\n \n ## Usage\n \n **Navigate to the application in your browser:**\n-    [TimSchedule.com]()\n+    [TimSchedule.com](http://timschedule.com/)\n"
+                }
+            ],
+            "date": 1723143014199,
+            "name": "Commit-0",
+            "content": "# "
+        }
+    ]
+}
