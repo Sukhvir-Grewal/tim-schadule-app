@@ -5,6 +5,13 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const app = express();
+
+app.use((req, res, next) => {
+	console.log(`Received request for ${req.url}`);
+	next();
+});
+
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/env', (req, res) => {
