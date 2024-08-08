@@ -1,5 +1,7 @@
 const express = require('express');
 const path = require('path');
+const dotenv = require('dotenv')
+dotenv.config()
 
 const app = express();
 app.use(express.static('public'));
