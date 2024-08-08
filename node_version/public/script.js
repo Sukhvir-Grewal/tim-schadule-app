@@ -21,6 +21,10 @@ document.getElementById("authorize_button").style.visibility = "hidden";
 async function fetchEnvVariables() {
     const response = await fetch('/env')
     const env = await response.json()
+    if (!response.ok) {
+        throw new Error('Network response was not ok ' + response.statusText);
+    }
+
     console.log('Fetched Environment Variables:', env);
     CLIENT_ID = env.clientId
     API_KEY = env.apiKey
