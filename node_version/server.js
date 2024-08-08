@@ -15,6 +15,7 @@ app.get('/env', (req, res) => {
 });
 
 app.get('/', (req, res) => {
+	console.log(process.env.CLIENT_ID)
 	res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
