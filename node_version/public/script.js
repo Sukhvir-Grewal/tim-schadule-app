@@ -22,7 +22,7 @@ async function fetchEnvVariables() {
     try {
         const response = await fetch('/env');
         if (!response.ok) {
-            throw new Error('Network response was not ok ' + response.statusText);
+            throw new Error('Network response was not ok ' + response);
         }
         const env = await response.json();
         console.log('Fetched Environment Variables:', env);
