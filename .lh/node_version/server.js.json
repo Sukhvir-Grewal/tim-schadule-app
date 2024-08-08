@@ -1,0 +1,18 @@
+{
+    "sourceFile": "node_version/server.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1723062992949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1723062992949,
+            "name": "Commit-0",
+            "content": "const express = require('express')\nconst path = require('path')\n\n\nconst app = express()\napp.use(express.static('public'))\n\napp.get('/', (req, res) => {\n\tres.sendFile(path.join(__dirname, \"./index.html\"))\n})\n\napp.listen(3000, () => { console.log(\"server started\") })"
+        }
+    ]
+}

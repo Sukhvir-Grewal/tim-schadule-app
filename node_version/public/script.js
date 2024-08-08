@@ -1,6 +1,5 @@
-const CLIENT_ID =
-    "788580741376-h1n2u0s3lsspsvs1u3gistjt900lvtuc.apps.googleusercontent.com";
-const API_KEY = "AIzaSyDxVfP2-xB6zDClxXShf8AAQLJAI0dCscA";
+let CLIENT_ID
+let API_KEY
 
 const DISCOVERY_DOCS = [
     "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
@@ -19,6 +18,21 @@ let endDate = "";
 
 document.getElementById("authorize_button").style.visibility = "hidden";
 
+async function fetchEnvVariables() {
+    const response = await fetch('/env')
+    const env = await response.json()
+    CLIENT_ID = env.clientId
+    API_KEY = env.apiKey
+
+    tokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: CLIENT_ID,
+        scope: SCOPES.join(" "),
+        callback: "", // defined later
+    });
+    gisInited = true;
+    maybeEnableButtons();
+}
+
 function gapiLoaded() {
     gapi.load("client", initializeGapiClient);
 }
@@ -33,13 +47,7 @@ async function initializeGapiClient() {
 }
 
 function gisLoaded() {
-    tokenClient = google.accounts.oauth2.initTokenClient({
-        client_id: CLIENT_ID,
-        scope: SCOPES.join(" "),
-        callback: "", // defined later
-    });
-    gisInited = true;
-    maybeEnableButtons();
+    fetchEnvVariables()
 }
 
 function maybeEnableButtons() {

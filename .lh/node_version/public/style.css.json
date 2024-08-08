@@ -1,0 +1,82 @@
+{
+    "sourceFile": "node_version/public/style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1723063088152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723063164671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (min-width: 600px) {\n+@media (max-width: 600px) {\n     .circle-4 {\n         background-color: black;\n     }\n }\n"
+                },
+                {
+                    "date": 1723063188840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (max-width: 600px) {\n+@media (min-width: 600px) {\n     .circle-4 {\n         background-color: black;\n     }\n }\n"
+                },
+                {
+                    "date": 1723063200339,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (min-width: 600px) {\n+@media (min-width: 800px) {\n     .circle-4 {\n         background-color: black;\n     }\n }\n"
+                },
+                {
+                    "date": 1723063214398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (min-width: 800px) {\n+@media (max-width: 800px) {\n     .circle-4 {\n         background-color: black;\n     }\n }\n"
+                },
+                {
+                    "date": 1723063261105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,10 +136,10 @@\n         opacity: 1;\n         transform: translateY(0);\n     }\n }\n-\n-@media (max-width: 800px) {\n+@media (min-width: 601px) and (max-width: 1024px) {\n     .circle-4 {\n-        background-color: black;\n+        background-color: blue; /* Example color */\n     }\n }\n+\n"
+                },
+                {
+                    "date": 1723063272977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,8 +136,9 @@\n         opacity: 1;\n         transform: translateY(0);\n     }\n }\n+\n @media (min-width: 601px) and (max-width: 1024px) {\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n"
+                },
+                {
+                    "date": 1723063306040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,10 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (min-width: 601px) and (max-width: 1024px) {\n+@media (min-width: 1001px) and (max-width: 1024px) {\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n-}\n-\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723063327381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (min-width: 1001px) and (max-width: 1024px) {\n+@media (min-width: 1001px){\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723063560881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (min-width: 1001px){\n+@media (min-width: 600px){\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723063570522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (min-width: 600px){\n+@media (max-width: 600px){\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723063623155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (max-width: 600px){\n+@media (max-width: 1000px){\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723063630853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (max-width: 1000px){\n+@media (max-width: 10000px){\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723063645622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (max-width: 10000px){\n+@media (min-width: 10000px){\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723063652184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (min-width: 10000px){\n+@media (min-width: 1000px){\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723063667909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (min-width: 1000px){\n+@media (min-width: 000px){\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723063686829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,9 +137,9 @@\n         transform: translateY(0);\n     }\n }\n \n-@media (min-width: 000px){\n+@media (min-width: 1000px){\n     .circle-4 {\n         background-color: blue; /* Example color */\n     }\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1723063088152,
+            "name": "Commit-0",
+            "content": "* {\n    padding: 0;\n    margin: 0;\n    overflow-x: hidden;\n    overflow-y: hidden;\n}\n\n.main-container {\n    height: 100dvh;\n    width: 100dvw;\n    display: grid;\n    place-content: center;\n    position: relative;\n}\n\n.logo {\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    height: 450px;\n    display: none;\n    pointer-events: none;\n}\n\n.slideUp {\n    display: block;\n    animation: slideUp 1s forwards;\n}\n\n.circle-1,\n.circle-2,\n.circle-3,\n.circle-4 {\n    border-radius: 50%;\n    display: grid;\n    place-content: center;\n}\n\n.circle-1 {\n    background-color: rgb(228, 129, 129);\n    animation: expandCircle1 1s ease forwards;\n    animation-delay: 0s;\n}\n\n.circle-2 {\n    background-color: rgb(233, 94, 94);\n    animation: expandCircle2 1s ease forwards;\n    animation-delay: 0.3s;\n}\n\n.circle-3 {\n    background-color: rgb(236, 72, 72);\n    animation: expandCircle3 1s ease forwards;\n    animation-delay: 0.8s;\n}\n\n.circle-4 {\n    background-color: rgb(233, 58, 58);\n    animation: expandCircle4 1s ease forwards;\n    animation-delay: 1.2s;\n    font-size: 5rem;\n    cursor: pointer;\n    border: 1px solid white;\n}\n\n#authorize_button {\n    display: none;\n    background-color: transparent;\n    border: none;\n    font-size: xx-large;\n    color: white;\n    font-weight: bolder;\n}\n\n#authorize_button.show {\n    display: block;\n}\n\n@keyframes expandCircle1 {\n    0% {\n        width: 0;\n        height: 0;\n    }\n\n    100% {\n        width: 2000px;\n        height: 2000px;\n    }\n}\n\n@keyframes expandCircle2 {\n    0% {\n        width: 0;\n        height: 0;\n    }\n\n    100% {\n        width: 1500px;\n        height: 1500px;\n    }\n}\n\n@keyframes expandCircle3 {\n    0% {\n        width: 0;\n        height: 0;\n    }\n\n    100% {\n        width: 1000px;\n        height: 1000px;\n    }\n}\n\n@keyframes expandCircle4 {\n    0% {\n        width: 0;\n        height: 0;\n    }\n\n    100% {\n        width: 500px;\n        height: 500px;\n    }\n}\n\n@keyframes slideUp {\n    0% {\n        opacity: 0;\n        transform: translateY(50px);\n    }\n\n    100% {\n        opacity: 1;\n        transform: translateY(0);\n    }\n}\n\n@media (min-width: 600px) {\n    .circle-4 {\n        background-color: black;\n    }\n}\n"
+        }
+    ]
+}

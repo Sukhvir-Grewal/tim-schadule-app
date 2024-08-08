@@ -8,20 +8,19 @@
 .main-container {
     height: 100dvh;
     width: 100dvw;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
 .logo {
     position: absolute;
-    left: 0;
-    right: 0;
     top: 0;
-    bottom: 0;
     height: 450px;
     display: none;
     pointer-events: none;
+    z-index: 10;
 }
 
 .slideUp {
@@ -34,8 +33,10 @@
 .circle-3,
 .circle-4 {
     border-radius: 50%;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 }
 
 .circle-1 {
@@ -138,8 +139,9 @@
     }
 }
 
-@media (min: 600px) {
-    .circle-4 {
-        background-color: black;
+@media (min-width: 1000px) {
+    .logo {
+        top: 100px;
+        height: 250px;
     }
 }
