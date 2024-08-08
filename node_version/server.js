@@ -11,10 +11,12 @@ app.get('/', (req, res) => {
 })
 
 app.get('/env', (req, res) => {
-	res.json({
+	const envData = {
 		clientId: process.env.CLIENT_ID,
 		apiKey: process.env.API_KEY
-	})
+	};
+	console.log('Environment Variables:', envData); // Log the environment variables
+	res.json(envData);
 })
 
 app.listen(3000, () => { console.log("server started") })
