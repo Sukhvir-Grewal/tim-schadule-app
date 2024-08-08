@@ -1,7 +1,5 @@
 const express = require('express');
 const path = require('path');
-const dotenv = require('dotenv')
-dotenv.config()
 
 const app = express();
 app.use(express.static('public'));
@@ -11,14 +9,17 @@ app.get('/env', (req, res) => {
 		clientId: process.env.CLIENT_ID,
 		apiKey: process.env.API_KEY
 	};
-	console.log('Environment Variables:', envData); res.json(envData);
+	console.log('Environment Variables:', envData);
+	res.json(envData);
 });
 
 app.get('/', (req, res) => {
-	console.log(process.env.CLIENT_ID)
 	res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-//app.listen(3000)
+// Catch all route to serve index.html for any other routes (if single-page app)
+app.get('*', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
-module.exports = app;
+module.exports = app; // Export the app for Vercel
