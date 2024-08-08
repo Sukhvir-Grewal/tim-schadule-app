@@ -12,10 +12,10 @@ Before creating this app, I had to manually check my emails and add events to my
 - Prevent duplicate events
 - Persistent authorization to avoid re-login
 
-## Before
+## Before (Manually)
 ![before](./media/before.gif)
 
-## After
+## After (Automated)
 ![after](./media/after.gif)
 
 ## Usage

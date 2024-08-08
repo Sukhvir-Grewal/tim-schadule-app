@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 21,
+            "activePatchIndex": 23,
             "patches": [
                 {
                     "date": 1723143014199,
@@ -92,6 +92,14 @@
                 {
                     "date": 1723144393729,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n ## Before\n ![before](./media/before.gif)\n \n ## After\n-![after](./media/before.gif)\n+![after](./media/.gif)\n \n ## Usage\n \n **Navigate to the application in your browser:**\n"
+                },
+                {
+                    "date": 1723144486314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,13 +11,13 @@\n - Add events to Google Calendar\n - Prevent duplicate events\n - Persistent authorization to avoid re-login\n \n-## Before\n+## Before ()\n ![before](./media/before.gif)\n \n ## After\n-![after](./media/.gif)\n+![after](./media/after.gif)\n \n ## Usage\n \n **Navigate to the application in your browser:**\n"
+                },
+                {
+                    "date": 1723144497253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,12 +11,12 @@\n - Add events to Google Calendar\n - Prevent duplicate events\n - Persistent authorization to avoid re-login\n \n-## Before ()\n+## Before (Manually)\n ![before](./media/before.gif)\n \n-## After\n+## After (Automated)\n ![after](./media/after.gif)\n \n ## Usage\n \n"
                 }
             ],
             "date": 1723143014199,
