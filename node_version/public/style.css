@@ -64,6 +64,7 @@
     font-size: 5rem;
     cursor: pointer;
     border: 1px solid white;
+    background-color: green;
 }
 
 #authorize_button {
