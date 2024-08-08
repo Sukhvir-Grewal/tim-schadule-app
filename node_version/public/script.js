@@ -54,8 +54,8 @@ async function fetchEnvVariables() {
  * Next 4 functions will from Official Quickstart  
  *     > https://developers.google.com/calendar/api/quickstart/js
  *     > https://developers.google.com/gmail/api/quickstart/js
- * NOTE: Code had been altered accordidly like use of localStorage for ease in login,
- * including document manupulaiton
+ * NOTE: Code had been altered accordingly like use of localStorage for ease in login,
+ * including document manipulation
 */
 function gapiLoaded() {
     gapi.load("client", initializeGapiClient);
@@ -313,7 +313,7 @@ function parseScheduleLine(line) {
     }
 }
 
-// Dont need to explain this one ^^
+// Don't need to explain this one ^^
 function convertTo24Hour(time) {
     if (!time) {
         throw new Error("Invalid time format");

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 13,
+            "activePatchIndex": 37,
             "patches": [
                 {
                     "date": 1722977912107,
@@ -60,6 +60,102 @@
                 {
                     "date": 1723004239371,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     \"https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest\",\n     \"https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest\",\n ];\n const SCOPES = [\n-    \"https://www.googleapis.com/auth/calendar\",\n+    \"https://www.googleapis.com/auth/calendar.events\",\n     \"https://www.googleapis.com/auth/gmail.readonly\",\n ];\n \n let tokenClient;\n"
+                },
+                {
+                    "date": 1723144572703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n const CLIENT_ID =\n-    \"788580741376-h1n2u0s3lsspsvs1u3gistjt900lvtuc.apps.googleusercontent.com\";\n-const API_KEY = \"AIzaSyDxVfP2-xB6zDClxXShf8AAQLJAI0dCscA\";\n+    \"\";\n+const API_KEY = \"\";\n \n const DISCOVERY_DOCS = [\n     \"https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest\",\n     \"https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest\",\n@@ -18,8 +18,15 @@\n let endDate = \"\";\n \n document.getElementById(\"authorize_button\").style.visibility = \"hidden\";\n \n+/*\n+ * Next 4 functions will from Official Quickstart  \n+ *     > https://developers.google.com/calendar/api/quickstart/js\n+ *     > https://developers.google.com/gmail/api/quickstart/js\n+ * NOTE: Code had been altered accordidly like use of localStorage for ease in login,\n+ * including document manupulaiton\n+*/\n function gapiLoaded() {\n     gapi.load(\"client\", initializeGapiClient);\n }\n \n@@ -102,14 +109,14 @@\n                 // Compare start and end time, allowing for small differences (e.g., due to different time zones)\n                 const startTimeMatches =\n                     Math.abs(\n                         new Date(event.start.dateTime) -\n-                            new Date(newEvent.start.dateTime)\n+                        new Date(newEvent.start.dateTime)\n                     ) < 60000; // 1 minute tolerance\n                 const endTimeMatches =\n                     Math.abs(\n                         new Date(event.end.dateTime) -\n-                            new Date(newEvent.end.dateTime)\n+                        new Date(newEvent.end.dateTime)\n                     ) < 60000;\n \n                 // Compare other details\n                 return (\n@@ -276,8 +283,8 @@\n     return [hours, minutes];\n }\n \n // animation stuff\n-setTimeout(function () {\n+setTimeout(function() {\n     document.getElementById(\"authorize_button\").classList.add(\"show\");\n     document.querySelector(\".logo\").classList.add(\"slideUp\");\n }, 2000);\n"
+                },
+                {
+                    "date": 1723144578542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n  * Next 4 functions will from Official Quickstart  \n  *     > https://developers.google.com/calendar/api/quickstart/js\n  *     > https://developers.google.com/gmail/api/quickstart/js\n  * NOTE: Code had been altered accordidly like use of localStorage for ease in login,\n- * including document manupulaiton\n+ * including document manipulation\n */\n function gapiLoaded() {\n     gapi.load(\"client\", initializeGapiClient);\n }\n"
+                },
+                {
+                    "date": 1723144620126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n /*\n  * Next 4 functions will from Official Quickstart  \n  *     > https://developers.google.com/calendar/api/quickstart/js\n  *     > https://developers.google.com/gmail/api/quickstart/js\n- * NOTE: Code had been altered accordidly like use of localStorage for ease in login,\n+ * NOTE: Code had been altered accordingly like use of localStorage for ease in login,\n  * including document manipulation\n */\n function gapiLoaded() {\n     gapi.load(\"client\", initializeGapiClient);\n@@ -75,8 +75,10 @@\n         tokenClient.requestAccessToken({ prompt: \"\" });\n     }\n }\n \n+// NOTE: Custom functions starts from here\n+\n async function addEvent(event) {\n     try {\n         const response = await gapi.client.calendar.events.insert({\n             calendarId: \"primary\",\n"
+                },
+                {
+                    "date": 1723144628210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,8 +89,12 @@\n         console.error(\"Error contacting the Calendar service: \", err.message);\n     }\n }\n \n+/*\n+ * Checks if the Event already exists in the place, \n+ * in case someone tries to push the event again\n+*/\n async function checkDuplicateEvent(newEvent) {\n     const calendar = gapi.client.calendar;\n \n     try {\n"
+                },
+                {
+                    "date": 1723144636342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,8 @@\n \n         if (events.length > 0) {\n             // Check if any event matches the new event's details\n             const duplicateEvent = events.find((event) => {\n-                // Compare start and end time, allowing for small differences (e.g., due to different time zones)\n                 const startTimeMatches =\n                     Math.abs(\n                         new Date(event.start.dateTime) -\n                         new Date(newEvent.start.dateTime)\n"
+                },
+                {
+                    "date": 1723144646634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,8 +111,9 @@\n \n         if (events.length > 0) {\n             // Check if any event matches the new event's details\n             const duplicateEvent = events.find((event) => {\n+\n                 const startTimeMatches =\n                     Math.abs(\n                         new Date(event.start.dateTime) -\n                         new Date(newEvent.start.dateTime)\n@@ -132,10 +133,8 @@\n                 );\n             });\n \n             if (duplicateEvent) {\n-                // Duplicate event found, return an error\n-\n                 console.log(\"Duplicate event found. Event not added.\");\n                 return;\n             }\n         }\n"
+                },
+                {
+                    "date": 1723144656447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,9 +138,9 @@\n                 return;\n             }\n         }\n \n-        // No duplicate found, add the new event\n+        // Everything looks good, send the sucker^^\n         await addEvent(newEvent);\n         console.log(\"Event added successfully.\");\n     } catch (error) {\n         console.error(\"Error checking or adding event:\", error.message);\n"
+                },
+                {
+                    "date": 1723144664902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,8 +146,17 @@\n         console.error(\"Error checking or adding event:\", error.message);\n     }\n }\n \n+/*\n+ * NOTE: Following logic is only for specific sender since i need to Extract\n+ * the schedule from the email, The code can be changed easily if the received email\n+ * have different format of schedule\n+ * \n+ * This code extract emails from noreply@clearviewconnect.com (my workplace schedule sender)\n+ * and gets the top email and extract the only lines starting from months and push line by line\n+ * in next function to get date and time separated\n+*/\n async function getRecentEmailFromSender() {\n     try {\n         // List messages from the specified sender\n         const res = await gapi.client.gmail.users.messages.list({\n"
+                },
+                {
+                    "date": 1723144685240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,8 +177,10 @@\n         const messageRes = await gapi.client.gmail.users.messages.get({\n             userId: \"me\",\n             id: messageId,\n         });\n+\n+        \n         const emailData = messageRes.result;\n         const encodedBody = emailData.payload.parts\n             ? emailData.payload.parts[0].body.data\n             : emailData.payload.body.data;\n"
+                },
+                {
+                    "date": 1723144713823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -178,9 +178,9 @@\n             userId: \"me\",\n             id: messageId,\n         });\n \n-        \n+        // NOTE: Learned new thing ^^\n         const emailData = messageRes.result;\n         const encodedBody = emailData.payload.parts\n             ? emailData.payload.parts[0].body.data\n             : emailData.payload.body.data;\n@@ -228,8 +228,9 @@\n \n function parseScheduleLine(line) {\n     try {\n         // Check for \"Not Scheduled\" and skip such lines\n+        // NOTE: String can be changed based on how your day off is mentioned in schedule\n         if (line.includes(\"Not Scheduled\")) {\n             console.log(`Skipping non-scheduled day`);\n             return null;\n         }\n"
+                },
+                {
+                    "date": 1723144721424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -244,9 +244,8 @@\n         const [startTime, endTime] = timeRange\n             .split(\" - \")\n             .map((time) => time.trim());\n \n-        // Extract month and day\n         const [month, day] = datePart.split(/\\s+/);\n         const year = new Date().getFullYear();\n         const date = new Date(`${month} ${day}, ${year}`);\n \n"
+                },
+                {
+                    "date": 1723144733581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -248,9 +248,8 @@\n         const [month, day] = datePart.split(/\\s+/);\n         const year = new Date().getFullYear();\n         const date = new Date(`${month} ${day}, ${year}`);\n \n-        // Convert times to Date objects\n         const startDateTime = new Date(date);\n         const endDateTime = new Date(date);\n \n         const [startHours, startMinutes] = convertTo24Hour(startTime);\n@@ -268,9 +267,9 @@\n             end: {\n                 dateTime: endDateTime.toISOString(),\n                 timeZone: \"America/Halifax\",\n             },\n-            colorId: \"5\", // Optional: color ID for the event\n+            colorId: \"5\", // Customizable based on interest \n         };\n     } catch (error) {\n         console.error(\"Error parsing schedule line:\", error.message);\n         throw new Error(\"Invalid schedule line format\");\n"
+                },
+                {
+                    "date": 1723144743781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -275,8 +275,9 @@\n         throw new Error(\"Invalid schedule line format\");\n     }\n }\n \n+// Don't need to explain this one ^^\n function convertTo24Hour(time) {\n     if (!time) {\n         throw new Error(\"Invalid time format\");\n     }\n"
+                },
+                {
+                    "date": 1723144749259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -297,9 +297,9 @@\n \n     return [hours, minutes];\n }\n \n-// animation stuff\n+// Animation stuff\n setTimeout(function() {\n     document.getElementById(\"authorize_button\").classList.add(\"show\");\n     document.querySelector(\".logo\").classList.add(\"slideUp\");\n }, 2000);\n"
+                },
+                {
+                    "date": 1723144755722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\n const CLIENT_ID =\n     \"\";\n const API_KEY = \"\";\n \n"
+                },
+                {
+                    "date": 1723144771892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-\n+// Sorry static version will now not work coz i had to reo\n const CLIENT_ID =\n     \"\";\n const API_KEY = \"\";\n \n"
+                },
+                {
+                    "date": 1723144777931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-// Sorry static version will now not work coz i had to reo\n+// Sorry static version will now not work coz i had to remove the \n const CLIENT_ID =\n     \"\";\n const API_KEY = \"\";\n \n"
+                },
+                {
+                    "date": 1723144784901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-// Sorry static version will now not work coz i had to remove the \n+// Sorry static version will now not work coz i had to remove these variable values\n const CLIENT_ID =\n     \"\";\n const API_KEY = \"\";\n \n"
+                },
+                {
+                    "date": 1723144790747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n // Sorry static version will now not work coz i had to remove these variable values\n+// \n const CLIENT_ID =\n     \"\";\n const API_KEY = \"\";\n \n"
+                },
+                {
+                    "date": 1723144806494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n // Sorry static version will now not work coz i had to remove these variable values\n-// \n+// The site is up and running on node_version at \n const CLIENT_ID =\n     \"\";\n const API_KEY = \"\";\n \n"
+                },
+                {
+                    "date": 1723144819132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n // Sorry static version will now not work coz i had to remove these variable values\n-// The site is up and running on node_version at \n+// The site is up and running on node_version at // Don't need to explain this one ^^\n const CLIENT_ID =\n     \"\";\n const API_KEY = \"\";\n \n"
+                },
+                {
+                    "date": 1723144824190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n // Sorry static version will now not work coz i had to remove these variable values\n-// The site is up and running on node_version at // Don't need to explain this one ^^\n+// The site is up and running on node_version at https://www.timschedule.com/\n const CLIENT_ID =\n     \"\";\n const API_KEY = \"\";\n \n"
+                },
+                {
+                    "date": 1723144849600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n // Sorry static version will now not work coz i had to remove these variable values\n+// Never the less the logic was derived from here\n // The site is up and running on node_version at https://www.timschedule.com/\n const CLIENT_ID =\n     \"\";\n const API_KEY = \"\";\n"
+                },
+                {
+                    "date": 1723144860947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n // Sorry static version will now not work coz i had to remove these variable values\n-// Never the less the logic was derived from here\n+// Never the less the logic was derived from this file\n // The site is up and running on node_version at https://www.timschedule.com/\n+\n const CLIENT_ID =\n     \"\";\n const API_KEY = \"\";\n \n"
                 }
             ],
             "date": 1722977912107,
