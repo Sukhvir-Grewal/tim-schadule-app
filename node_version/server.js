@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
 const favicon = require('serve-favicon')
+// This is for the freeking warning i keep getting
 const cookieParser = require('cookie-parser');
 
 dotenv.config();
@@ -26,6 +27,5 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(3000)
+// app.listen(3000)
 module.exports = app;
-

@@ -154,6 +154,7 @@
     }
 }
 
+/* Just for the laptop stuff*/
 @media (min-width: 1000px) {
     .logo {
         top: 100px;

@@ -5,6 +5,7 @@ const DISCOVERY_DOCS = [
     "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
     "https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest",
 ];
+
 const SCOPES = [
     "https://www.googleapis.com/auth/calendar.events",
     "https://www.googleapis.com/auth/gmail.readonly",
@@ -18,6 +19,11 @@ let endDate = "";
 
 document.getElementById("authorize_button").style.visibility = "hidden";
 
+
+/*
+ * This code Servers the purpose of getting both Env variables
+ * including initializing the client Token
+*/
 async function fetchEnvVariables() {
     try {
         const response = await fetch('/env');
@@ -44,6 +50,13 @@ async function fetchEnvVariables() {
     }
 }
 
+/*
+ * Next 4 functions will from Official Quickstart  
+ *     > https://developers.google.com/calendar/api/quickstart/js
+ *     > https://developers.google.com/gmail/api/quickstart/js
+ * NOTE: Code had been altered accordidly like use of localStorage for ease in login,
+ * including document manupulaiton
+*/
 function gapiLoaded() {
     gapi.load("client", initializeGapiClient);
 }
@@ -94,6 +107,8 @@ function handleAuthClick() {
     }
 }
 
+// NOTE: Custom functions starts from here
+
 async function addEvent(event) {
     try {
         const response = await gapi.client.calendar.events.insert({
@@ -106,6 +121,10 @@ async function addEvent(event) {
     }
 }
 
+/*
+ * Checks if the Event already exists in the place, 
+ * in case someone tries to push the event again
+*/
 async function checkDuplicateEvent(newEvent) {
     const calendar = gapi.client.calendar;
 
@@ -124,7 +143,7 @@ async function checkDuplicateEvent(newEvent) {
         if (events.length > 0) {
             // Check if any event matches the new event's details
             const duplicateEvent = events.find((event) => {
-                // Compare start and end time, allowing for small differences (e.g., due to different time zones)
+
                 const startTimeMatches =
                     Math.abs(
                         new Date(event.start.dateTime) -
@@ -146,14 +165,12 @@ async function checkDuplicateEvent(newEvent) {
             });
 
             if (duplicateEvent) {
-                // Duplicate event found, return an error
-
                 console.log("Duplicate event found. Event not added.");
                 return;
             }
         }
 
-        // No duplicate found, add the new event
+        // Everything looks good, send the sucker^^
         await addEvent(newEvent);
         console.log("Event added successfully.");
     } catch (error) {
@@ -161,6 +178,15 @@ async function checkDuplicateEvent(newEvent) {
     }
 }
 
+/*
+ * NOTE: Following logic is only for specific sender since i need to Extract
+ * the schedule from the email, The code can be changed easily if the received email
+ * have different format of schedule
+ * 
+ * This code extract emails from noreply@clearviewconnect.com (my workplace schedule sender)
+ * and gets the top email and extract the only lines starting from months and push line by line
+ * in next function to get date and time separated
+*/
 async function getRecentEmailFromSender() {
     try {
         // List messages from the specified sender
@@ -183,6 +209,8 @@ async function getRecentEmailFromSender() {
             userId: "me",
             id: messageId,
         });
+
+        // NOTE: Learned new thing ^^
         const emailData = messageRes.result;
         const encodedBody = emailData.payload.parts
             ? emailData.payload.parts[0].body.data
@@ -213,17 +241,21 @@ async function getRecentEmailFromSender() {
                 const event = parseScheduleLine(line);
                 if (event) {
                     await checkDuplicateEvent(event);
-                    // document.getElementById("content").innerHTML += `${line}`;
                 }
             } catch (error) {
                 console.error("Error parsing or adding event:", error.message);
             }
-            endDate = line.split(":")[0].trim();
+
+            // NOTE: For Further Development
+
+            // endDate = line.split(":")[0].trim();
         }
-        startDate = scheduleLines[0].split(":")[0].trim();
-        document.getElementById(
+        /*
+            startDate = scheduleLines[0].split(":")[0].trim();
+            document.getElementById(
             "content"
-        ).innerHTML += `Schedule from ${startDate} to ${endDate} has been Posted on calender`;
+            ).innerHTML += `Schedule from ${startDate} to ${endDate} has been Posted on calender`;
+        */
     } catch (error) {
         console.error("Error fetching email:", error.message);
     }
@@ -232,6 +264,7 @@ async function getRecentEmailFromSender() {
 function parseScheduleLine(line) {
     try {
         // Check for "Not Scheduled" and skip such lines
+        // NOTE: String can be changed based on how your day off is mentioned in schedule
         if (line.includes("Not Scheduled")) {
             console.log(`Skipping non-scheduled day`);
             return null;
@@ -242,6 +275,7 @@ function parseScheduleLine(line) {
         const timeAndDetails = rest.trim();
 
         // Handle specific cases based on structure
+        // NOTE: Learned new thing ^^
         const [timeRange] = timeAndDetails.split(/\s*,\s*/);
         const [startTime, endTime] = timeRange
             .split(" - ")
@@ -252,7 +286,6 @@ function parseScheduleLine(line) {
         const year = new Date().getFullYear();
         const date = new Date(`${month} ${day}, ${year}`);
 
-        // Convert times to Date objects
         const startDateTime = new Date(date);
         const endDateTime = new Date(date);
 
@@ -272,7 +305,7 @@ function parseScheduleLine(line) {
                 dateTime: endDateTime.toISOString(),
                 timeZone: "America/Halifax",
             },
-            colorId: "5", // Optional: color ID for the event
+            colorId: "5", // Customizable based on interest 
         };
     } catch (error) {
         console.error("Error parsing schedule line:", error.message);
@@ -280,6 +313,7 @@ function parseScheduleLine(line) {
     }
 }
 
+// Dont need to explain this one ^^
 function convertTo24Hour(time) {
     if (!time) {
         throw new Error("Invalid time format");
@@ -301,7 +335,7 @@ function convertTo24Hour(time) {
     return [hours, minutes];
 }
 
-// animation stuff
+// Animation stuff
 setTimeout(function() {
     document?.getElementById("authorize_button").classList.add("show");
     document?.querySelector(".logo").classList.add("slideUp");
