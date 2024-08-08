@@ -1,6 +1,6 @@
 const CLIENT_ID =
-    "788580741376-h1n2u0s3lsspsvs1u3gistjt900lvtuc.apps.googleusercontent.com";
-const API_KEY = "AIzaSyDxVfP2-xB6zDClxXShf8AAQLJAI0dCscA";
+    "";
+const API_KEY = "";
 
 const DISCOVERY_DOCS = [
     "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
@@ -103,12 +103,12 @@ async function checkDuplicateEvent(newEvent) {
                 const startTimeMatches =
                     Math.abs(
                         new Date(event.start.dateTime) -
-                            new Date(newEvent.start.dateTime)
+                        new Date(newEvent.start.dateTime)
                     ) < 60000; // 1 minute tolerance
                 const endTimeMatches =
                     Math.abs(
                         new Date(event.end.dateTime) -
-                            new Date(newEvent.end.dateTime)
+                        new Date(newEvent.end.dateTime)
                     ) < 60000;
 
                 // Compare other details
@@ -277,7 +277,7 @@ function convertTo24Hour(time) {
 }
 
 // animation stuff
-setTimeout(function () {
+setTimeout(function() {
     document.getElementById("authorize_button").classList.add("show");
     document.querySelector(".logo").classList.add("slideUp");
 }, 2000);
