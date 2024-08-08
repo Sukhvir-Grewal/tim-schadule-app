@@ -19,22 +19,26 @@ let endDate = "";
 document.getElementById("authorize_button").style.visibility = "hidden";
 
 async function fetchEnvVariables() {
-    const response = await fetch('../env')
-    const env = await response.json()
-    if (!response.ok) {
-        throw new Error('Network response was not ok ' + response.statusText);
-    }
-    console.log('Fetched Environment Variables:', env);
-    CLIENT_ID = env.clientId
-    API_KEY = env.apiKey
+    try {
+        const response = await fetch('/env');
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        const env = await response.json();
+        console.log('Fetched Environment Variables:', env);
+        CLIENT_ID = env.clientId;
+        API_KEY = env.apiKey;
 
-    tokenClient = google.accounts.oauth2.initTokenClient({
-        client_id: CLIENT_ID,
-        scope: SCOPES.join(" "),
-        callback: "", // defined later
-    });
-    gisInited = true;
-    maybeEnableButtons();
+        tokenClient = google.accounts.oauth2.initTokenClient({
+            client_id: CLIENT_ID,
+            scope: SCOPES.join(" "),
+            callback: "", // defined later
+        });
+        gisInited = true;
+        maybeEnableButtons();
+    } catch (error) {
+        console.error("Error fetching environment variables:", error);
+    }
 }
 
 function gapiLoaded() {
