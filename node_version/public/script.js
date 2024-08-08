@@ -21,11 +21,7 @@ document.getElementById("authorize_button").style.visibility = "hidden";
 async function fetchEnvVariables() {
     try {
         const response = await fetch('/env');
-        if (!response.ok) {
-            throw new Error('Network response was not ok ' + response);
-        }
         const env = await response.json();
-        console.log('Fetched Environment Variables:', env);
         CLIENT_ID = env.clientId;
         API_KEY = env.apiKey;
 
@@ -71,9 +67,8 @@ function handleAuthClick() {
             console.error("Error during authorization:", resp);
             return;
         }
-        document.getElementById("authorize_button").style.visibility = "hidden";
-        // document.getElementById("content").innerHTML =
-        //     "Schedule has been Pushed To calendar ^^<br>";
+        document.getElementById("authorize_button").style.display = "none";
+        document.querySelector(".after_authorize").style.display = "block";
 
         await getRecentEmailFromSender();
     };
@@ -294,6 +289,6 @@ function convertTo24Hour(time) {
 
 // animation stuff
 setTimeout(function() {
-    document.getElementById("authorize_button").classList.add("show");
-    document.querySelector(".logo").classList.add("slideUp");
+    document?.getElementById("authorize_button").classList.add("show");
+    document?.querySelector(".logo").classList.add("slideUp");
 }, 2000);

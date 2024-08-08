@@ -15,7 +15,6 @@ app.get('/env', (req, res) => {
 		clientId: process.env.CLIENT_ID,
 		apiKey: process.env.API_KEY
 	};
-	console.log('Environment Variables:', envData);
 	res.json(envData);
 });
 
@@ -23,4 +22,6 @@ app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-module.exports = app; 
+app.listen(3000)
+module.exports = app;
+

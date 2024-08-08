@@ -23,6 +23,12 @@
     z-index: 10;
 }
 
+.tick {
+    color: green;
+    width: 80px;
+    height: 80px;
+}
+
 .slideUp {
     display: block;
     animation: slideUp 1s forwards;
@@ -62,9 +68,7 @@
     animation: expandCircle4 1s ease forwards;
     animation-delay: 1.2s;
     font-size: 5rem;
-    cursor: pointer;
     border: 1px solid white;
-    background-color: green;
 }
 
 #authorize_button {
@@ -74,10 +78,21 @@
     font-size: xx-large;
     color: white;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 #authorize_button.show {
     display: block;
+}
+
+.after_authorize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    display: none;
+    color: white;
 }
 
 @keyframes expandCircle1 {
