@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 10,
+            "activePatchIndex": 21,
             "patches": [
                 {
                     "date": 1723143014199,
@@ -48,6 +48,50 @@
                 {
                     "date": 1723143430201,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,5 @@\n \n ## Usage\n \n **Navigate to the application in your browser:**\n-    [TimSchedule.com]()\n+    [TimSchedule.com](http://timschedule.com/)\n"
+                },
+                {
+                    "date": 1723143988316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,10 @@\n - Add events to Google Calendar\n - Prevent duplicate events\n - Persistent authorization to avoid re-login\n \n+\n+\n ## Usage\n \n **Navigate to the application in your browser:**\n     [TimSchedule.com](http://timschedule.com/)\n"
+                },
+                {
+                    "date": 1723143994578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n - Add events to Google Calendar\n - Prevent duplicate events\n - Persistent authorization to avoid re-login\n \n+## Before\n \n \n ## Usage\n \n"
+                },
+                {
+                    "date": 1723144274309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n - Prevent duplicate events\n - Persistent authorization to avoid re-login\n \n ## Before\n+!()\n \n-\n ## Usage\n \n **Navigate to the application in your browser:**\n     [TimSchedule.com](http://timschedule.com/)\n"
+                },
+                {
+                    "date": 1723144280122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n - Prevent duplicate events\n - Persistent authorization to avoid re-login\n \n ## Before\n-!()\n+!(before)[']\n \n ## Usage\n \n **Navigate to the application in your browser:**\n"
+                },
+                {
+                    "date": 1723144288216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n - Prevent duplicate events\n - Persistent authorization to avoid re-login\n \n ## Before\n-!(before)[']\n+!(before)[./]\n \n ## Usage\n \n **Navigate to the application in your browser:**\n"
+                },
+                {
+                    "date": 1723144301115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n - Prevent duplicate events\n - Persistent authorization to avoid re-login\n \n ## Before\n-!(before)[./]\n+!(before)[/]\n \n ## Usage\n \n **Navigate to the application in your browser:**\n"
+                },
+                {
+                    "date": 1723144312610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n - Prevent duplicate events\n - Persistent authorization to avoid re-login\n \n ## Before\n-!(before)[/]\n+![be]\n \n ## Usage\n \n **Navigate to the application in your browser:**\n"
+                },
+                {
+                    "date": 1723144319889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n - Prevent duplicate events\n - Persistent authorization to avoid re-login\n \n ## Before\n-![be]\n+![before](./media/before.gif)\n \n ## Usage\n \n **Navigate to the application in your browser:**\n"
+                },
+                {
+                    "date": 1723144327690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,11 @@\n \n ## Before\n ![before](./media/before.gif)\n \n+## Before\n+![before](./media/before.gif)\n+\n ## Usage\n \n **Navigate to the application in your browser:**\n     [TimSchedule.com](http://timschedule.com/)\n"
+                },
+                {
+                    "date": 1723144335333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n \n ## Before\n ![before](./media/before.gif)\n \n-## Before\n-![before](./media/before.gif)\n+## After\n+![after](./media/before.gif)\n \n ## Usage\n \n **Navigate to the application in your browser:**\n"
+                },
+                {
+                    "date": 1723144393729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n ## Before\n ![before](./media/before.gif)\n \n ## After\n-![after](./media/before.gif)\n+![after](./media/.gif)\n \n ## Usage\n \n **Navigate to the application in your browser:**\n"
                 }
             ],
             "date": 1723143014199,
