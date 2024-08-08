@@ -63,13 +63,8 @@ function gisLoaded() {
 
 function maybeEnableButtons() {
     if (gapiInited && gisInited) {
-        const token = gapi.client.getToken();
-        console.log(token)
-        if (token) {
-            // document.getElementById("authorize_button").style.display = "none";
-            document.getElementById("authorize_button").style.visibility = "visible";
-            document.querySelector(".after-authorize").style.display = "flex";
-        }
+        document.getElementById("authorize_button").style.visibility = "visible";
+        document.querySelector(".after-authorize").style.display = "flex";
     }
 }
 
