@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1723144584777,
@@ -12,6 +12,10 @@
                 {
                     "date": 1723144738455,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n /*\n  * Next 4 functions will from Official Quickstart  \n  *     > https://developers.google.com/calendar/api/quickstart/js\n  *     > https://developers.google.com/gmail/api/quickstart/js\n- * NOTE: Code had been altered accordidly like use of localStorage for ease in login,\n+ * NOTE: Code had been altered accordingly like use of localStorage for ease in login,\n  * including document manipulation\n */\n function gapiLoaded() {\n     gapi.load(\"client\", initializeGapiClient);\n@@ -312,9 +312,9 @@\n         throw new Error(\"Invalid schedule line format\");\n     }\n }\n \n-// Dont need to explain this one ^^\n+// Don't need to explain this one ^^\n function convertTo24Hour(time) {\n     if (!time) {\n         throw new Error(\"Invalid time format\");\n     }\n"
+                },
+                {
+                    "date": 1723145515699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,8 @@\n \n function maybeEnableButtons() {\n     if (gapiInited && gisInited) {\n         document.getElementById(\"authorize_button\").style.visibility = \"visible\";\n-        document.querySelector(\".after-authorize\").style.display = \"flex\";\n     }\n }\n \n function handleAuthClick() {\n"
                 }
             ],
             "date": 1723144584777,

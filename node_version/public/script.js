@@ -77,7 +77,6 @@ function gisLoaded() {
 function maybeEnableButtons() {
     if (gapiInited && gisInited) {
         document.getElementById("authorize_button").style.visibility = "visible";
-        document.querySelector(".after-authorize").style.display = "flex";
     }
 }
 
