@@ -6,6 +6,10 @@ dotenv.config()
 const app = express();
 app.use(express.static('public'));
 
+app.get('/test', (req, res) => {
+	console.log("this one runs")
+})
+
 app.get('/env', (req, res) => {
 	const envData = {
 		clientId: process.env.CLIENT_ID,
