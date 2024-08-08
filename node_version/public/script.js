@@ -30,6 +30,13 @@ async function fetchEnvVariables() {
             scope: SCOPES.join(" "),
             callback: "", // defined later
         });
+
+        // Check for stored token
+        const storedToken = localStorage.getItem("gapi_token")
+        if (storedToken) {
+            gapi.client.setToken(JSON.stringify(storedToken))
+        }
+
         gisInited = true;
         maybeEnableButtons();
     } catch (error) {
@@ -56,8 +63,13 @@ function gisLoaded() {
 
 function maybeEnableButtons() {
     if (gapiInited && gisInited) {
-        document.getElementById("authorize_button").style.visibility =
-            "visible";
+        const token = gapi.client.getToken();
+        console.log(token)
+        if (token) {
+            // document.getElementById("authorize_button").style.display = "none";
+            document.getElementById("authorize_button").style.visibility = "visible";
+            document.querySelector(".after-authorize").style.display = "flex";
+        }
     }
 }
 
@@ -67,6 +79,13 @@ function handleAuthClick() {
             console.error("Error during authorization:", resp);
             return;
         }
+
+        // save the token to locakstorage
+        const token = gapi.client.getToken()
+        if (token) {
+            localStorage.setItem("gapi_token", JSON.stringify(token))
+        }
+
         document.getElementById("authorize_button").style.display = "none";
         document.querySelector(".after_authorize").style.display = "flex";
 
