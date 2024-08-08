@@ -20,8 +20,6 @@ document.getElementById("authorize_button").style.visibility = "hidden";
 
 async function fetchEnvVariables() {
     try {
-        const respons = await fetch('/test');
-        console.log(respons)
         const response = await fetch('/env');
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
