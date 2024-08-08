@@ -10,7 +10,8 @@ app.get('/env', (req, res) => {
 		apiKey: process.env.API_KEY
 	};
 	console.log('Environment Variables:', envData);
-	res.json(envData);
+	// res.json(envData);
+	res.send("esdfsd")
 });
 
 app.get('/', (req, res) => {
