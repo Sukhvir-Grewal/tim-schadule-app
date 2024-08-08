@@ -1,11 +1,13 @@
 const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
+const favicon = require('serve-favicon')
 
 dotenv.config();
 
 const app = express();
 
+app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
