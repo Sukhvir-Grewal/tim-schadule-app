@@ -23,6 +23,17 @@
     z-index: 10;
 }
 
+.privacy {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 10;
+    display: none;
+}
+
 .tick {
     color: green;
     width: 80px;
@@ -32,6 +43,11 @@
 .slideUp {
     display: block;
     animation: slideUp 1s forwards;
+}
+
+.fadeIn {
+    display: block;
+    animation: fadeIn 2s ease;
 }
 
 .circle-1,
@@ -94,6 +110,7 @@
     color: white;
 }
 
+
 @keyframes expandCircle1 {
     0% {
         width: 0;
@@ -151,6 +168,16 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 

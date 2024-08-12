@@ -337,5 +337,6 @@ function convertTo24Hour(time) {
 // Animation stuff
 setTimeout(function() {
     document?.getElementById("authorize_button").classList.add("show");
-    document?.querySelector(".logo").classList.add("slideUp");
+    document.querySelector(".logo").classList.add("slideUp");
+    document.querySelector(".privacy").classList.add("fadeIn");
 }, 2000);
