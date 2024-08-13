@@ -10,6 +10,12 @@ dotenv.config();
 const app = express();
 app.use(cookieParser());
 
+// This is to control cache data 
+app.use((req, res, next) => {
+	res.setHeader('Cache-Control', 'no-store');
+	next();
+});
+
 app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -28,7 +34,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/privacy-policy', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));
+	res.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));
 });
 
 app.listen(3000)
