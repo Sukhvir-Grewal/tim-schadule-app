@@ -14,6 +14,32 @@
     position: relative;
 }
 
+.backDrop {
+    z-index: 11;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.aboutBox {
+    background-color: white;
+    border-radius: 10px;
+    min-height: 100px;
+    width: 90vw;
+    padding: 90px 90px;
+    animation: fadeIn 4s ease;
+    font-size: 40px;
+    overflow: auto;
+}
+
+.aboutBox h2 {
+    margin-bottom: 70px;
+}
+
 .logo {
     position: absolute;
     top: 0;
@@ -110,7 +136,6 @@
     color: white;
 }
 
-
 @keyframes expandCircle1 {
     0% {
         width: 0;
@@ -186,5 +211,10 @@
     .logo {
         top: 100px;
         height: 250px;
+    }
+    .aboutBox {
+        min-height: 200px;
+        width: 500px;
+        font-size: 20px;
     }
 }

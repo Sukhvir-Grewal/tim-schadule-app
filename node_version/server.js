@@ -6,8 +6,8 @@ const favicon = require('serve-favicon')
 const cookieParser = require('cookie-parser');
 
 dotenv.config();
-
-const app = express();
+ 
+const app = express()
 app.use(cookieParser());
 
 // This is to control cache data 
@@ -35,6 +35,10 @@ app.get('/', (req, res) => {
 
 app.get('/privacy-policy', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));
+});
+
+app.get('/about', (req, res) => {
+	res.sendFile(path.join(__dirname, 'public', 'about.html'));
 });
 
 app.listen(3000)

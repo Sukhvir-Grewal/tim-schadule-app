@@ -1,0 +1,290 @@
+{
+    "sourceFile": "public/style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 68,
+            "patches": [
+                {
+                    "date": 1723682404471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723682412509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n     position: relative;\n }\n \n .backDrop{\n-    \n+    background-color: black;\n+}\n \n .logo {\n     position: absolute;\n     top: 0;\n"
+                },
+                {
+                    "date": 1723682421545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n     position: relative;\n }\n \n .backDrop{\n+    height: 100vh;\n+    width: 100vw;\n     background-color: black;\n }\n \n .logo {\n"
+                },
+                {
+                    "date": 1723682456169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,8 +17,9 @@\n .backDrop{\n     height: 100vh;\n     width: 100vw;\n     background-color: black;\n+    zi\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682469929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n .backDrop{\n     height: 100vh;\n     width: 100vw;\n     background-color: black;\n-    zi\n+    z-index: 11;\n+    backbl\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682476668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     height: 100vh;\n     width: 100vw;\n     background-color: black;\n     z-index: 11;\n-    backbl\n+    bac\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682482032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     height: 100vh;\n     width: 100vw;\n     background-color: black;\n     z-index: 11;\n-    bac\n+    backdrop-filter: blur(3);\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682495717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,11 +16,10 @@\n \n .backDrop{\n     height: 100vh;\n     width: 100vw;\n-    background-color: black;\n     z-index: 11;\n-    backdrop-filter: blur(3);\n+    backdrop-filter: blur(3px);\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682536629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,10 @@\n     z-index: 11;\n     backdrop-filter: blur(3px);\n }\n \n+.aboutBox\n+\n .logo {\n     position: absolute;\n     top: 0;\n     height: 450px;\n"
+                },
+                {
+                    "date": 1723682544592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,12 +18,16 @@\n     height: 100vh;\n     width: 100vw;\n     z-index: 11;\n     backdrop-filter: blur(3px);\n+    display: grid;\n+    \n }\n \n-.aboutBox\n+.aboutBox{\n \n+}\n+\n .logo {\n     position: absolute;\n     top: 0;\n     height: 450px;\n"
+                },
+                {
+                    "date": 1723682561178,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     width: 100vw;\n     z-index: 11;\n     backdrop-filter: blur(3px);\n     display: grid;\n-    \n+    place-content: center;\n }\n \n .aboutBox{\n \n"
+                },
+                {
+                    "date": 1723682568681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,10 @@\n     place-content: center;\n }\n \n .aboutBox{\n-\n+    background-color: white;\n+    \n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682576766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,10 @@\n }\n \n .aboutBox{\n     background-color: white;\n-    \n+    border-radius: 10px;\n+    height: ;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682583272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n \n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n-    height: ;\n+    min;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682590727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n \n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n-    min;\n+    min-height: 200px;\n+    width: ;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682941438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n-    width: ;\n+    min-width: 300px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682947720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n-    min-width: 300px;\n+    width: 300px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682956495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n-    width: 300px;\n+    width: 500px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682966392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n+    pad\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682971750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n-    pad\n+    padding: 5px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682980646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n     padding: 5px;\n+    disp\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682988621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,10 @@\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n     padding: 5px;\n-    disp\n+    display: flex;\n+    flex-direction: column;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723682995893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,8 @@\n     min-height: 200px;\n     width: 500px;\n     padding: 5px;\n     display: flex;\n-    flex-direction: column;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683098064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,10 +27,9 @@\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n-    padding: 5px;\n-    display: flex;\n+    padding: 5px ;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683109015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n-    padding: 5px ;\n+    padding: 5px 20px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683123894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n-    padding: 5px 20px;\n+    padding: 5px 100px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683372066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,10 @@\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n-    padding: 5px 100px;\n+    padding: 5px 20px;\n+    pointer-events: none;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683385090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,8 @@\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n     padding: 5px 20px;\n-    pointer-events: none;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683471141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,9 @@\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n     padding: 5px 20px;\n+    \n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683502547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n     padding: 5px 20px;\n-    \n+    animation: ;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683507664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n     padding: 5px 20px;\n-    animation: ;\n+    animation: fadeIn ;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683533653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n     border-radius: 10px;\n     min-height: 200px;\n     width: 500px;\n     padding: 5px 20px;\n-    animation: fadeIn ;\n+    animation: fadeIn 4s ease;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683681622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n .backDrop{\n     height: 100vh;\n     width: 100vw;\n     z-index: 11;\n-    backdrop-filter: blur(3px);\n+    backdrop-filter: blur(10px);\n     display: grid;\n     place-content: center;\n }\n \n"
+                },
+                {
+                    "date": 1723683763496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,17 +13,20 @@\n     align-items: center;\n     position: relative;\n }\n \n-.backDrop{\n+.backDrop {\n     height: 100vh;\n     width: 100vw;\n     z-index: 11;\n     backdrop-filter: blur(10px);\n+    -webkit-backdrop-filter: blur(10px); /* For Safari and older iOS versions */\n     display: grid;\n     place-content: center;\n+    background-color: rgba(255, 255, 255, 0.5); /* Fallback for browsers that don't support backdrop-filter */\n }\n \n+\n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n"
+                },
+                {
+                    "date": 1723683798831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     backdrop-filter: blur(10px);\n     -webkit-backdrop-filter: blur(10px); /* For Safari and older iOS versions */\n     display: grid;\n     place-content: center;\n-    background-color: rgba(255, 255, 255, 0.5); /* Fallback for browsers that don't support backdrop-filter */\n+    background-color: rgba(255, 255, 255, 0.5); \n }\n \n \n .aboutBox{\n"
+                },
+                {
+                    "date": 1723683805193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n     height: 100vh;\n     width: 100vw;\n     z-index: 11;\n     backdrop-filter: blur(10px);\n-    -webkit-backdrop-filter: blur(10px); /* For Safari and older iOS versions */\n+    -webkit-backdrop-filter: blur(10px); \n     display: grid;\n     place-content: center;\n     background-color: rgba(255, 255, 255, 0.5); \n }\n"
+                },
+                {
+                    "date": 1723683813617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,15 +14,15 @@\n     position: relative;\n }\n \n .backDrop {\n+    z-index: 11;\n     height: 100vh;\n     width: 100vw;\n-    z-index: 11;\n+    display: grid;\n+    place-content: center;\n     backdrop-filter: blur(10px);\n     -webkit-backdrop-filter: blur(10px); \n-    display: grid;\n-    place-content: center;\n     background-color: rgba(255, 255, 255, 0.5); \n }\n \n \n"
+                },
+                {
+                    "date": 1723683856140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,5 +207,6 @@\n     .logo {\n         top: 100px;\n         height: 250px;\n     }\n+    aboutBox\n }\n"
+                },
+                {
+                    "date": 1723683861849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,6 +207,8 @@\n     .logo {\n         top: 100px;\n         height: 250px;\n     }\n-    aboutBox\n+    .aboutBox{\n+        background-color: ;\n+    }\n }\n"
+                },
+                {
+                    "date": 1723683894557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,7 +208,8 @@\n         top: 100px;\n         height: 250px;\n     }\n     .aboutBox{\n-        background-color: ;\n+        min-height: 200px;\n+    width: 500px;\n     }\n }\n"
+                },
+                {
+                    "date": 1723683911831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n-    width: 500px;\n+    width: 9;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n }\n \n"
+                },
+                {
+                    "date": 1723683917375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n-    width: 9;\n+    width: 98vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n }\n \n"
+                },
+                {
+                    "date": 1723683924709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n     min-height: 200px;\n-    width: 98vw;\n+    width: 9;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n }\n \n"
+                },
+                {
+                    "date": 1723683936486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n \n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n-    min-height: 200px;\n-    width: 9;\n+    min-height: 600px;\n+    width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n }\n \n"
+                },
+                {
+                    "date": 1723683943777,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n     min-height: 600px;\n     width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n+    fon\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683950299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     min-height: 600px;\n     width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n-    fon\n+    font-size: ;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683962792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     min-height: 600px;\n     width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n-    font-size: ;\n+    font-size: 80px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683968684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     min-height: 600px;\n     width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n-    font-size: 80px;\n+    font-size: 20px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683979147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     min-height: 600px;\n     width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n-    font-size: 20px;\n+    font-size: 50px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683984862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     min-height: 600px;\n     width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n-    font-size: 50px;\n+    font-size: 0px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723683992893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n     min-height: 600px;\n     width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n-    font-size: 0px;\n+    font-size: 40px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723684009517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n \n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n-    min-height: 600px;\n+    min-height: 10px;\n     width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n"
+                },
+                {
+                    "date": 1723684027613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,15 +28,17 @@\n \n .aboutBox{\n     background-color: white;\n     border-radius: 10px;\n-    min-height: 10px;\n+    min-height: 100px;\n     width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n }\n \n+.aboutBox > \n+\n .logo {\n     position: absolute;\n     top: 0;\n     height: 450px;\n"
+                },
+                {
+                    "date": 1723684034081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,11 @@\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n }\n \n-.aboutBox > \n+.aboutBox > *{\n+    margi\n+}\n \n .logo {\n     position: absolute;\n     top: 0;\n"
+                },
+                {
+                    "date": 1723684042573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,10 @@\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n }\n \n-.aboutBox > *{\n-    margi\n+.aboutBox > p{\n+    \n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723684048292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     font-size: 40px;\n }\n \n .aboutBox > p{\n-    \n+    margin-bottom: ;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723684064372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     font-size: 40px;\n }\n \n .aboutBox > p{\n-    margin-bottom: ;\n+    margin-bottom: 30px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723684069589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n     font-size: 40px;\n }\n \n .aboutBox > p{\n-    margin-bottom: 30px;\n+    margin-bottom: 70px;\n }\n \n .logo {\n     position: absolute;\n"
+                },
+                {
+                    "date": 1723684082192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n }\n \n-.aboutBox > p{\n+.aboutBox p{\n     margin-bottom: 70px;\n }\n \n .logo {\n"
+                },
+                {
+                    "date": 1723684092658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n }\n \n-.aboutBox p{\n+.aboutBox h2{\n     margin-bottom: 70px;\n }\n \n .logo {\n"
+                },
+                {
+                    "date": 1723684099822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n }\n \n-.aboutBox h2{\n+.aboutBox h2 p{\n     margin-bottom: 70px;\n }\n \n .logo {\n"
+                },
+                {
+                    "date": 1723684118558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n }\n \n-.aboutBox h2 p{\n+.aboutBox h2{\n     margin-bottom: 70px;\n }\n \n .logo {\n"
+                },
+                {
+                    "date": 1723684245807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n     width: 90vw;\n     padding: 5px 20px;\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n+    margin\n }\n \n .aboutBox h2{\n     margin-bottom: 70px;\n"
+                },
+                {
+                    "date": 1723684261049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,12 +30,11 @@\n     background-color: white;\n     border-radius: 10px;\n     min-height: 100px;\n     width: 90vw;\n-    padding: 5px 20px;\n+    padding: 5px 90px;\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n-    margin\n }\n \n .aboutBox h2{\n     margin-bottom: 70px;\n"
+                },
+                {
+                    "date": 1723684270044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     background-color: white;\n     border-radius: 10px;\n     min-height: 100px;\n     width: 90vw;\n-    padding: 5px 90px;\n+    padding: 10px 90px;\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n }\n \n"
+                },
+                {
+                    "date": 1723684275859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n     background-color: white;\n     border-radius: 10px;\n     min-height: 100px;\n     width: 90vw;\n-    padding: 10px 90px;\n+    padding: 90px 90px;\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n }\n \n"
+                },
+                {
+                    "date": 1723684293021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,14 +20,13 @@\n     width: 100vw;\n     display: grid;\n     place-content: center;\n     backdrop-filter: blur(10px);\n-    -webkit-backdrop-filter: blur(10px); \n-    background-color: rgba(255, 255, 255, 0.5); \n+    -webkit-backdrop-filter: blur(10px);\n+    background-color: rgba(255, 255, 255, 0.5);\n }\n \n-\n-.aboutBox{\n+.aboutBox {\n     background-color: white;\n     border-radius: 10px;\n     min-height: 100px;\n     width: 90vw;\n@@ -35,9 +34,9 @@\n     animation: fadeIn 4s ease;\n     font-size: 40px;\n }\n \n-.aboutBox h2{\n+.aboutBox h2 {\n     margin-bottom: 70px;\n }\n \n .logo {\n@@ -135,9 +134,8 @@\n     font-weight: bolder;\n     color: white;\n }\n \n-\n @keyframes expandCircle1 {\n     0% {\n         width: 0;\n         height: 0;\n@@ -212,9 +210,9 @@\n     .logo {\n         top: 100px;\n         height: 250px;\n     }\n-    .aboutBox{\n+    .aboutBox {\n         min-height: 200px;\n-    width: 500px;\n+        width: 500px;\n     }\n }\n"
+                },
+                {
+                    "date": 1723684299897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -213,6 +213,7 @@\n     }\n     .aboutBox {\n         min-height: 200px;\n         width: 500px;\n+        font-size: ;\n     }\n }\n"
+                },
+                {
+                    "date": 1723684458129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,9 +132,9 @@\n     align-items: center;\n     font-size: 4rem;\n     font-weight: bolder;\n     color: white;\n-    \n+    O\n }\n \n @keyframes expandCircle1 {\n     0% {\n"
+                }
+            ],
+            "date": 1723682404471,
+            "name": "Commit-0",
+            "content": "* {\n    padding: 0;\n    margin: 0;\n    overflow-x: hidden;\n    overflow-y: hidden;\n}\n\n.main-container {\n    height: 100dvh;\n    width: 100dvw;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    position: relative;\n}\n\n.backDrop{\n    \n\n.logo {\n    position: absolute;\n    top: 0;\n    height: 450px;\n    display: none;\n    pointer-events: none;\n    z-index: 10;\n}\n\n.privacy {\n    width: 50px;\n    height: 50px;\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    cursor: pointer;\n    z-index: 10;\n    display: none;\n}\n\n.tick {\n    color: green;\n    width: 80px;\n    height: 80px;\n}\n\n.slideUp {\n    display: block;\n    animation: slideUp 1s forwards;\n}\n\n.fadeIn {\n    display: block;\n    animation: fadeIn 2s ease;\n}\n\n.circle-1,\n.circle-2,\n.circle-3,\n.circle-4 {\n    border-radius: 50%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    position: absolute;\n}\n\n.circle-1 {\n    background-color: rgb(228, 129, 129);\n    animation: expandCircle1 1s ease forwards;\n    animation-delay: 0s;\n}\n\n.circle-2 {\n    background-color: rgb(233, 94, 94);\n    animation: expandCircle2 1s ease forwards;\n    animation-delay: 0.3s;\n}\n\n.circle-3 {\n    background-color: rgb(236, 72, 72);\n    animation: expandCircle3 1s ease forwards;\n    animation-delay: 0.8s;\n}\n\n.circle-4 {\n    background-color: rgb(233, 58, 58);\n    animation: expandCircle4 1s ease forwards;\n    animation-delay: 1.2s;\n    font-size: 5rem;\n    border: 1px solid white;\n}\n\n#authorize_button {\n    display: none;\n    background-color: transparent;\n    border: none;\n    font-size: xx-large;\n    color: white;\n    font-weight: bolder;\n    cursor: pointer;\n}\n\n#authorize_button.show {\n    display: block;\n}\n\n.after_authorize {\n    display: none;\n    justify-content: center;\n    align-items: center;\n    font-size: 4rem;\n    font-weight: bolder;\n    color: white;\n}\n\n\n@keyframes expandCircle1 {\n    0% {\n        width: 0;\n        height: 0;\n    }\n\n    100% {\n        width: 2000px;\n        height: 2000px;\n    }\n}\n\n@keyframes expandCircle2 {\n    0% {\n        width: 0;\n        height: 0;\n    }\n\n    100% {\n        width: 1500px;\n        height: 1500px;\n    }\n}\n\n@keyframes expandCircle3 {\n    0% {\n        width: 0;\n        height: 0;\n    }\n\n    100% {\n        width: 1000px;\n        height: 1000px;\n    }\n}\n\n@keyframes expandCircle4 {\n    0% {\n        width: 0;\n        height: 0;\n    }\n\n    100% {\n        width: 500px;\n        height: 500px;\n    }\n}\n\n@keyframes slideUp {\n    0% {\n        opacity: 0;\n        transform: translateY(50px);\n    }\n\n    100% {\n        opacity: 1;\n        transform: translateY(0);\n    }\n}\n\n@keyframes fadeIn {\n    0% {\n        opacity: 0;\n    }\n\n    100% {\n        opacity: 1;\n    }\n}\n\n/* Just for the laptop stuff*/\n@media (min-width: 1000px) {\n    .logo {\n        top: 100px;\n        height: 250px;\n    }\n}\n"
+        }
+    ]
+}

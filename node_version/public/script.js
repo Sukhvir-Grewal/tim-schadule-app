@@ -340,3 +340,8 @@ setTimeout(function() {
     document.querySelector(".logo").classList.add("slideUp");
     document.querySelector(".privacy").classList.add("fadeIn");
 }, 2000);
+
+
+document.querySelector(".backDrop").addEventListener('click', ()=>{
+    document.querySelector(".backDrop").style.display = "none"
+})

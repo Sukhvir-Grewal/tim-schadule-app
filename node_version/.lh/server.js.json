@@ -1,0 +1,46 @@
+{
+    "sourceFile": "server.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1723681100718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723681105797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n const cookieParser = require('cookie-parser');\n \n dotenv.config();\n  \n-const app = express();\n+const app = express()\n app.use(cookieParser());\n \n // This is to control cache data \n app.use((req, res, next) => {\n"
+                },
+                {
+                    "date": 1723685060848,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,17 @@\n  \n const app = express()\n app.use(cookieParser());\n \n+app.use((req, res, next) => {\n+    res.setHeader(\n+        \"Content-Security-Policy\",\n+        \"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self';\"\n+    );\n+    next();\n+});\n+\n+\n // This is to control cache data \n app.use((req, res, next) => {\n \tres.setHeader('Cache-Control', 'no-store');\n \tnext();\n"
+                },
+                {
+                    "date": 1723685075678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,15 +9,8 @@\n  \n const app = express()\n app.use(cookieParser());\n \n-app.use((req, res, next) => {\n-    res.setHeader(\n-        \"Content-Security-Policy\",\n-        \"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self';\"\n-    );\n-    next();\n-});\n \n \n // This is to control cache data \n app.use((req, res, next) => {\n"
+                },
+                {
+                    "date": 1723685448141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,43 +1,54 @@\n const express = require('express');\n const path = require('path');\n const dotenv = require('dotenv');\n-const favicon = require('serve-favicon')\n-// This is for the freeking warning i keep getting\n+const favicon = require('serve-favicon');\n const cookieParser = require('cookie-parser');\n+const helmet = require('helmet'); // Import Helmet\n \n dotenv.config();\n- \n-const app = express()\n+\n+const app = express();\n app.use(cookieParser());\n \n+// Use Helmet to set the CSP header\n+app.use(helmet.contentSecurityPolicy({\n+    directives: {\n+        defaultSrc: [\"'self'\"],\n+        scriptSrc: [\"'self'\", \"'unsafe-inline'\", \"https://apis.google.com\", \"https://accounts.google.com\"],\n+        styleSrc: [\"'self'\", \"'unsafe-inline'\"],\n+        imgSrc: [\"'self'\", \"data:\", \"https:\"],\n+        connectSrc: [\"'self'\", \"https://apis.google.com\"],\n+        fontSrc: [\"'self'\", \"https:\"],\n+        objectSrc: [\"'none'\"],\n+        upgradeInsecureRequests: [],\n+    },\n+}));\n \n-\n-// This is to control cache data \n+// Control cache data\n app.use((req, res, next) => {\n-\tres.setHeader('Cache-Control', 'no-store');\n-\tnext();\n+    res.setHeader('Cache-Control', 'no-store');\n+    next();\n });\n \n app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));\n-\n app.use(express.static(path.join(__dirname, 'public')));\n \n-\n app.get('/env', (req, res) => {\n-\tconst envData = {\n-\t\tclientId: process.env.CLIENT_ID,\n-\t\tapiKey: process.env.API_KEY\n-\t};\n-\tres.json(envData);\n+    const envData = {\n+        clientId: process.env.CLIENT_ID,\n+        apiKey: process.env.API_KEY\n+    };\n+    res.json(envData);\n });\n \n app.get('/', (req, res) => {\n-\tres.sendFile(path.join(__dirname, 'public', 'index.html'));\n+    res.sendFile(path.join(__dirname, 'public', 'index.html'));\n });\n \n app.get('/privacy-policy', (req, res) => {\n-\tres.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));\n+    res.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));\n });\n \n-app.listen(3000)\n+app.listen(3000);\n+\n module.exports = app;\n"
+                },
+                {
+                    "date": 1723685477713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,54 +1,42 @@\n const express = require('express');\n const path = require('path');\n const dotenv = require('dotenv');\n-const favicon = require('serve-favicon');\n+const favicon = require('serve-favicon')\n+// This is for the freeking warning i keep getting\n const cookieParser = require('cookie-parser');\n-const helmet = require('helmet'); // Import Helmet\n \n dotenv.config();\n-\n-const app = express();\n+ \n+const app = express()\n app.use(cookieParser());\n \n-// Use Helmet to set the CSP header\n-app.use(helmet.contentSecurityPolicy({\n-    directives: {\n-        defaultSrc: [\"'self'\"],\n-        scriptSrc: [\"'self'\", \"'unsafe-inline'\", \"https://apis.google.com\", \"https://accounts.google.com\"],\n-        styleSrc: [\"'self'\", \"'unsafe-inline'\"],\n-        imgSrc: [\"'self'\", \"data:\", \"https:\"],\n-        connectSrc: [\"'self'\", \"https://apis.google.com\"],\n-        fontSrc: [\"'self'\", \"https:\"],\n-        objectSrc: [\"'none'\"],\n-        upgradeInsecureRequests: [],\n-    },\n-}));\n \n-// Control cache data\n+// This is to control cache data \n app.use((req, res, next) => {\n-    res.setHeader('Cache-Control', 'no-store');\n-    next();\n+\tres.setHeader('Cache-Control', 'no-store');\n+\tnext();\n });\n \n app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));\n+\n app.use(express.static(path.join(__dirname, 'public')));\n \n+\n app.get('/env', (req, res) => {\n-    const envData = {\n-        clientId: process.env.CLIENT_ID,\n-        apiKey: process.env.API_KEY\n-    };\n-    res.json(envData);\n+\tconst envData = {\n+\t\tclientId: process.env.CLIENT_ID,\n+\t\tapiKey: process.env.API_KEY\n+\t};\n+\tres.json(envData);\n });\n \n app.get('/', (req, res) => {\n-    res.sendFile(path.join(__dirname, 'public', 'index.html'));\n+\tres.sendFile(path.join(__dirname, 'public', 'index.html'));\n });\n \n app.get('/privacy-policy', (req, res) => {\n-    res.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));\n+\tres.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));\n });\n \n-app.listen(3000);\n-\n+app.listen(3000)\n module.exports = app;\n"
+                },
+                {
+                    "date": 1723685867728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,8 @@\n  \n const app = express()\n app.use(cookieParser());\n \n-\n // This is to control cache data \n app.use((req, res, next) => {\n \tres.setHeader('Cache-Control', 'no-store');\n \tnext();\n@@ -37,6 +36,10 @@\n app.get('/privacy-policy', (req, res) => {\n \tres.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));\n });\n \n+app.get('/privacy-policy', (req, res) => {\n+\tres.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));\n+});\n+\n app.listen(3000)\n module.exports = app;\n"
+                },
+                {
+                    "date": 1723685874128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,10 +36,10 @@\n app.get('/privacy-policy', (req, res) => {\n \tres.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));\n });\n \n-app.get('/privacy-policy', (req, res) => {\n-\tres.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));\n+app.get('/about', (req, res) => {\n+\tres.sendFile(path.join(__dirname, 'public', 'about.html'));\n });\n \n app.listen(3000)\n module.exports = app;\n"
+                }
+            ],
+            "date": 1723681100718,
+            "name": "Commit-0",
+            "content": "const express = require('express');\nconst path = require('path');\nconst dotenv = require('dotenv');\nconst favicon = require('serve-favicon')\n// This is for the freeking warning i keep getting\nconst cookieParser = require('cookie-parser');\n\ndotenv.config();\n \nconst app = express();\napp.use(cookieParser());\n\n// This is to control cache data \napp.use((req, res, next) => {\n\tres.setHeader('Cache-Control', 'no-store');\n\tnext();\n});\n\napp.use(favicon(path.join(__dirname, 'public', 'favicon.png')));\n\napp.use(express.static(path.join(__dirname, 'public')));\n\n\napp.get('/env', (req, res) => {\n\tconst envData = {\n\t\tclientId: process.env.CLIENT_ID,\n\t\tapiKey: process.env.API_KEY\n\t};\n\tres.json(envData);\n});\n\napp.get('/', (req, res) => {\n\tres.sendFile(path.join(__dirname, 'public', 'index.html'));\n});\n\napp.get('/privacy-policy', (req, res) => {\n\tres.sendFile(path.join(__dirname, 'public', 'privacy-policy.html'));\n});\n\napp.listen(3000)\nmodule.exports = app;\n"
+        }
+    ]
+}
