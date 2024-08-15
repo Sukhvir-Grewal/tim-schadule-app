@@ -4,37 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Tim Schedule App</title>
+    <link rel="stylesheet" href="about.css">
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    header {
+        background-color: rgb(243, 82, 82);
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    
+    h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .about-section {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .about-section h2 {
+        color: #f38252;
+        margin-top: 20px;
+    }
+    
+    .about-section p {
+        line-height: 1.6;
+    }
+    
+    .about-section ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+    
+    .about-section a {
+        color: #f38252;
+        text-decoration: none;
+    }
+    
+    .about-section a:hover {
+        text-decoration: underline;
+    }
+    
+</style>
 <body>
     <header>
         <h1>About Tim Schedule App</h1>
     </header>
-    <style>
-        
-    </style>
     <main>
         <section class="about-section">
-            <p>
-                Tim Schedule App is designed to make managing schedules at Tim Hortons locations easier and more efficient. By integrating seamlessly with Google Calendar and Gmail, the app allows employees to automatically fetch and manage calendar events based on their work schedule emails.
-            </p>
+            <h2>Purpose of the App</h2>
+            <p>Tim Schedule App is designed to make managing schedules at Tim Hortons locations easier and more efficient. By integrating seamlessly with Google Calendar and Gmail, the app allows employees to automatically fetch and manage calendar events based on their work schedule emails.</p>
+            
             <h2>How It Works</h2>
-            <p>
-                The app works by accessing specific data from your Google account:
-            </p>
+            <p>The app works by accessing specific data from your Google account:</p>
             <ul>
                 <li>Your Gmail data: The app fetches emails from designated senders that contain your work schedule.</li>
                 <li>Your Google Calendar: The app automatically adds events to your calendar based on the schedule found in your emails.</li>
             </ul>
-            <p>
-                Once you authorize the app, it will continuously monitor your email for new schedule updates and ensure that no duplicate events are added to your calendar. This means you'll always have an up-to-date work schedule with minimal effort on your part.
-            </p>
+            <p>Once you authorize the app, it will continuously monitor your email for new schedule updates and ensure that no duplicate events are added to your calendar. This means you'll always have an up-to-date work schedule with minimal effort on your part.</p>
+            
             <h2>Privacy and Security</h2>
-            <p>
-                We take your privacy seriously. The app does not store any of your Google user data on our servers. All data processing occurs locally on your device, and your authorization token is securely stored in your browser's local storage. Your data is never shared with third parties, and we strictly comply with Google's Limited Use Requirements.
-            </p>
-            <p>
-                For more details on how your data is used, please read our <a href="/privacy-policy">Privacy Policy</a>.
-            </p>
+            <p>We take your privacy seriously. The app does not store any of your Google user data on our servers. All data processing occurs locally on your device, and your authorization token is securely stored in your browser's local storage. Your data is never shared with third parties, and we strictly comply with Google's Limited Use Requirements.</p>
+            
+            <p>For more details on how your data is used, please read our <a href="/privacy-policy">Privacy Policy</a>.</p>
         </section>
     </main>
 </body>
